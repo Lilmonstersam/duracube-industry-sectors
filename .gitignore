@@ -1,0 +1,19 @@
+# OS
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Editors
+.vscode/
+.idea/
+*.swp
+
+# Local build / transfer files
+_bundle*.tar*
+*.zip
+node_modules/
+
+# Third-party tracking scripts saved with the pages (unused in the mockup)
+site*/gtm.js
+site*/twk-main.js
+site*/hotjar-*.js

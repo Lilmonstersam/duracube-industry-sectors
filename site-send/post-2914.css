@@ -1,0 +1,73 @@
+.elementor-2914 .elementor-element.elementor-element-9b9819b{--display:flex;--flex-direction:column;--container-widget-width:100%;--container-widget-height:initial;--container-widget-flex-grow:0;--container-widget-align-self:initial;--flex-wrap-mobile:wrap;--padding-top:0px;--padding-bottom:0px;--padding-left:0px;--padding-right:0px;}.elementor-2914 .elementor-element.elementor-element-9b9819b:not(.elementor-motion-effects-element-type-background), .elementor-2914 .elementor-element.elementor-element-9b9819b > .elementor-motion-effects-container > .elementor-motion-effects-layer{background-color:var( --e-global-color-cad07a3 );}.elementor-2914 .elementor-element.elementor-element-7e30d89{--display:flex;--margin-top:30px;--margin-bottom:30px;--margin-left:0px;--margin-right:0px;}.elementor-2914 .elementor-element.elementor-element-f18ae82{width:var( --container-widget-width, 50% );max-width:50%;--container-widget-width:50%;--container-widget-flex-grow:0;}.elementor-2914 .elementor-element.elementor-element-f18ae82 > .elementor-widget-container{padding:0px 0px 10px 0px;border-style:solid;border-width:0px 0px 1px 0px;border-color:#DDDDDD;}.elementor-2914 .elementor-element.elementor-element-f18ae82 .woocommerce-breadcrumb{color:var( --e-global-color-text );font-family:"Roobert", Sans-serif;font-size:14px;font-weight:500;letter-spacing:3px;}.elementor-2914 .elementor-element.elementor-element-f18ae82 .woocommerce-breadcrumb > a{color:var( --e-global-color-text );}.elementor-2914 .elementor-element.elementor-element-5e03f57{--display:flex;--flex-direction:column;--container-widget-width:100%;--container-widget-height:initial;--container-widget-flex-grow:0;--container-widget-align-self:initial;--flex-wrap-mobile:wrap;--margin-top:75px;--margin-bottom:75px;--margin-left:0px;--margin-right:0px;}.elementor-2914 .elementor-element.elementor-element-b9883a8{--display:flex;--padding-top:50px;--padding-bottom:50px;--padding-left:50px;--padding-right:50px;}.elementor-2914 .elementor-element.elementor-element-b9883a8:not(.elementor-motion-effects-element-type-background), .elementor-2914 .elementor-element.elementor-element-b9883a8 > .elementor-motion-effects-container > .elementor-motion-effects-layer{background-color:var( --e-global-color-ddf1cbc );}.elementor-2914 .elementor-element.elementor-element-05961c7 .elementor-heading-title{font-family:"Roobert", Sans-serif;font-size:40px;color:var( --e-global-color-cad07a3 );}.elementor-2914 .elementor-element.elementor-element-10fe08b > .elementor-widget-container{margin:0px 0px 50px 0px;}.elementor-2914 .elementor-element.elementor-element-10fe08b .elementor-heading-title{font-family:"Roobert", Sans-serif;font-size:20px;font-weight:400;line-height:1.5em;color:#A4A4A4;}@media(max-width:767px){.elementor-2914 .elementor-element.elementor-element-b9883a8{--padding-top:15px;--padding-bottom:15px;--padding-left:15px;--padding-right:15px;}}@media(min-width:768px){.elementor-2914 .elementor-element.elementor-element-9b9819b{--content-width:1400px;}.elementor-2914 .elementor-element.elementor-element-5e03f57{--content-width:1400px;}}/* Start custom CSS */.custom-form p.gform_required_legend {
+    display: none !important;
+}
+.custom-form button {
+    font-family: "Roobert";
+    background-color: #fff !important;
+    color: #000 !important;
+    font-weight: normal;
+}
+.custom-form span.gfield_required.gfield_required_asterisk {
+    color: #73B01E !important;
+    font-size: 24px !important;
+}
+.custom-form input#gform_submit_button_7 {
+    background-color: #73B01E !important;
+    font-family: "Roobert";
+    border-radius: 0 !important;
+    font-weight: normal;
+    text-transform: capitalize !important;
+    font-size: 15px;
+    letter-spacing: 0 !important;
+}
+.custom-form input#gform_submit_button_7:hover {
+    background-color: #24408E !important;
+}
+.custom-form p,
+.custom-form span,
+.custom-form label {
+    font-family: "Roobert";
+    font-weight: 400 !important;
+    color: #fff;
+}/* End custom CSS */
+/* Start Custom Fonts CSS */@font-face {
+	font-family: 'Roobert';
+	font-style: normal;
+	font-weight: normal;
+	font-display: auto;
+	src: url('https://duracube.com.au/wp-content/uploads/2025/01/roobert-regular.eot');
+	src: url('https://duracube.com.au/wp-content/uploads/2025/01/roobert-regular.eot?#iefix') format('embedded-opentype'),
+		url('https://duracube.com.au/wp-content/uploads/2025/01/roobert-regular.woff2') format('woff2'),
+		url('https://duracube.com.au/wp-content/uploads/2025/01/roobert-regular.ttf') format('truetype');
+}
+@font-face {
+	font-family: 'Roobert';
+	font-style: normal;
+	font-weight: 600;
+	font-display: auto;
+	src: url('https://duracube.com.au/wp-content/uploads/2025/01/roobert-semibold.eot');
+	src: url('https://duracube.com.au/wp-content/uploads/2025/01/roobert-semibold.eot?#iefix') format('embedded-opentype'),
+		url('https://duracube.com.au/wp-content/uploads/2025/01/roobert-semibold.woff2') format('woff2'),
+		url('https://duracube.com.au/wp-content/uploads/2025/01/roobert-semibold.ttf') format('truetype');
+}
+@font-face {
+	font-family: 'Roobert';
+	font-style: normal;
+	font-weight: 700;
+	font-display: auto;
+	src: url('https://duracube.com.au/wp-content/uploads/2025/01/roobert-bold.eot');
+	src: url('https://duracube.com.au/wp-content/uploads/2025/01/roobert-bold.eot?#iefix') format('embedded-opentype'),
+		url('https://duracube.com.au/wp-content/uploads/2025/01/roobert-bold.woff2') format('woff2'),
+		url('https://duracube.com.au/wp-content/uploads/2025/01/roobert-bold.ttf') format('truetype');
+}
+@font-face {
+	font-family: 'Roobert';
+	font-style: normal;
+	font-weight: 900;
+	font-display: auto;
+	src: url('https://duracube.com.au/wp-content/uploads/2025/01/roobert-heavy.eot');
+	src: url('https://duracube.com.au/wp-content/uploads/2025/01/roobert-heavy.eot?#iefix') format('embedded-opentype'),
+		url('https://duracube.com.au/wp-content/uploads/2025/01/roobert-heavy.woff2') format('woff2'),
+		url('https://duracube.com.au/wp-content/uploads/2025/01/roobert-heavy.ttf') format('truetype');
+}
+/* End Custom Fonts CSS */

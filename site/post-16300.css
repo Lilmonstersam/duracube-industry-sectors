@@ -1,0 +1,41 @@
+.elementor-16300 .elementor-element.elementor-element-3bf3bf9{--display:flex;--padding-top:0px;--padding-bottom:0px;--padding-left:0px;--padding-right:0px;}.elementor-16300 .elementor-element.elementor-element-b1bd236{font-family:"Roobert", Sans-serif;font-size:12px;line-height:1em;color:#000000;}/* Start Custom Fonts CSS */@font-face {
+	font-family: 'Roobert';
+	font-style: normal;
+	font-weight: normal;
+	font-display: auto;
+	src: url('https://duracube.com.au/wp-content/uploads/2025/01/roobert-regular.eot');
+	src: url('https://duracube.com.au/wp-content/uploads/2025/01/roobert-regular.eot?#iefix') format('embedded-opentype'),
+		url('https://duracube.com.au/wp-content/uploads/2025/01/roobert-regular.woff2') format('woff2'),
+		url('https://duracube.com.au/wp-content/uploads/2025/01/roobert-regular.ttf') format('truetype');
+}
+@font-face {
+	font-family: 'Roobert';
+	font-style: normal;
+	font-weight: 600;
+	font-display: auto;
+	src: url('https://duracube.com.au/wp-content/uploads/2025/01/roobert-semibold.eot');
+	src: url('https://duracube.com.au/wp-content/uploads/2025/01/roobert-semibold.eot?#iefix') format('embedded-opentype'),
+		url('https://duracube.com.au/wp-content/uploads/2025/01/roobert-semibold.woff2') format('woff2'),
+		url('https://duracube.com.au/wp-content/uploads/2025/01/roobert-semibold.ttf') format('truetype');
+}
+@font-face {
+	font-family: 'Roobert';
+	font-style: normal;
+	font-weight: 700;
+	font-display: auto;
+	src: url('https://duracube.com.au/wp-content/uploads/2025/01/roobert-bold.eot');
+	src: url('https://duracube.com.au/wp-content/uploads/2025/01/roobert-bold.eot?#iefix') format('embedded-opentype'),
+		url('https://duracube.com.au/wp-content/uploads/2025/01/roobert-bold.woff2') format('woff2'),
+		url('https://duracube.com.au/wp-content/uploads/2025/01/roobert-bold.ttf') format('truetype');
+}
+@font-face {
+	font-family: 'Roobert';
+	font-style: normal;
+	font-weight: 900;
+	font-display: auto;
+	src: url('https://duracube.com.au/wp-content/uploads/2025/01/roobert-heavy.eot');
+	src: url('https://duracube.com.au/wp-content/uploads/2025/01/roobert-heavy.eot?#iefix') format('embedded-opentype'),
+		url('https://duracube.com.au/wp-content/uploads/2025/01/roobert-heavy.woff2') format('woff2'),
+		url('https://duracube.com.au/wp-content/uploads/2025/01/roobert-heavy.ttf') format('truetype');
+}
+/* End Custom Fonts CSS */
