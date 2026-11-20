@@ -6,10 +6,10 @@
 var gform;gform||(document.addEventListener("gform_main_scripts_loaded",function(){gform.scriptsLoaded=!0}),document.addEventListener("gform/theme/scripts_loaded",function(){gform.themeScriptsLoaded=!0}),window.addEventListener("DOMContentLoaded",function(){gform.domLoaded=!0}),gform={domLoaded:!1,scriptsLoaded:!1,themeScriptsLoaded:!1,isFormEditor:()=>"function"==typeof InitializeEditor,callIfLoaded:function(o){return!(!gform.domLoaded||!gform.scriptsLoaded||!gform.themeScriptsLoaded&&!gform.isFormEditor()||(gform.isFormEditor()&&console.warn("The use of gform.initializeOnLoaded() is deprecated in the form editor context and will be removed in Gravity Forms 3.1."),o(),0))},initializeOnLoaded:function(o){gform.callIfLoaded(o)||(document.addEventListener("gform_main_scripts_loaded",()=>{gform.scriptsLoaded=!0,gform.callIfLoaded(o)}),document.addEventListener("gform/theme/scripts_loaded",()=>{gform.themeScriptsLoaded=!0,gform.callIfLoaded(o)}),window.addEventListener("DOMContentLoaded",()=>{gform.domLoaded=!0,gform.callIfLoaded(o)}))},hooks:{action:{},filter:{}},addAction:function(o,r,e,t){gform.addHook("action",o,r,e,t)},addFilter:function(o,r,e,t){gform.addHook("filter",o,r,e,t)},doAction:function(o){gform.doHook("action",o,arguments)},applyFilters:function(o){return gform.doHook("filter",o,arguments)},removeAction:function(o,r){gform.removeHook("action",o,r)},removeFilter:function(o,r,e){gform.removeHook("filter",o,r,e)},addHook:function(o,r,e,t,n){null==gform.hooks[o][r]&&(gform.hooks[o][r]=[]);var d=gform.hooks[o][r];null==n&&(n=r+"_"+d.length),gform.hooks[o][r].push({tag:n,callable:e,priority:t=null==t?10:t})},doHook:function(r,o,e){var t;if(e=Array.prototype.slice.call(e,1),null!=gform.hooks[r][o]&&((o=gform.hooks[r][o]).sort(function(o,r){return o.priority-r.priority}),o.forEach(function(o){"function"!=typeof(t=o.callable)&&(t=window[t]),"action"==r?t.apply(null,e):e[0]=t.apply(null,e)})),"filter"==r)return e[0]},removeHook:function(o,r,t,n){var e;null!=gform.hooks[o][r]&&(e=(e=gform.hooks[o][r]).filter(function(o,r,e){return!!(null!=n&&n!=o.tag||null!=t&&t!=o.priority)}),gform.hooks[o][r]=e)}});
 </script>
 
-	<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">		<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=0"><meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"><meta name="format-detection" content="telephone=no"><title>Industrial Bathroom Partitions &amp; Workshop Lockers | DuraCube</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">		<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=0"><meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"><meta name="format-detection" content="telephone=no"><title>School Toilet Partitions &amp; Lockers | DuraCube</title>
 <script type="text/javascript">var ajaxurl = "https://duracube.com.au/wp-admin/admin-ajax.php";</script>
 		<!-- All in One SEO 5.0.1.1 - aioseo.com -->
-	<meta name="description" content="Heavy duty toilet and shower partitions, workshop lockers and change room benches for factories, warehouses and mine sites. 15-year warranty. Get a price.">
+	<meta name="description" content="School toilet partitions and lockers made in Australia. Fast turnarounds for holiday refurbishments, a 15-year warranty and new anti-tamper locks.">
 	<meta name="robots" content="noindex, nofollow">
 	
 	<link rel="canonical" href="https://duracube.com.au/industrial-sector/">
@@ -4311,111 +4311,177 @@ body.dcm-drawer #dcm-drawer{transform:none;visibility:visible}
   #dcm-ui{bottom:66px}
 }
 
+/* offices list (all-state local teams) */
+#dcm .offices{display:grid;grid-template-columns:1fr 1fr;gap:16px 22px;margin:4px 0 6px}
+#dcm .off{font-family:var(--body);font-size:14px;line-height:1.35;color:#bdbdbd;border-top:1px solid #333;padding-top:12px}
+#dcm .off b{display:block;font-family:var(--roo);font-weight:600;font-size:17px;color:#fff;margin-bottom:4px}
+#dcm .off em{display:block;font-style:normal;font-size:12px;color:#8a8a8a;margin-top:4px}
+#dcm .off.pri{border-top:3px solid var(--g)}
+/* horizontal secondary product cards */
+#dcm .sys2 .row-card{flex-direction:row}
+#dcm .sys2 .row-card > img{width:40%;aspect-ratio:auto;object-fit:cover;flex-shrink:0}
+/* lock feature on dark */
+#dcm .lockfeat{background:#111;border-color:#2a2a2a;margin-top:0}
+#dcm .lockfeat .txt p,#dcm .lockfeat li{color:#d6d6d6}
+#dcm .lockfeat .h-sec{color:#fff}
+@media (max-width:767px){
+  #dcm .offices{grid-template-columns:1fr}
+  #dcm .sys2 .row-card{flex-direction:column}
+  #dcm .sys2 .row-card > img{width:100%;aspect-ratio:4/3}
+}
+
 body{overflow-x:clip}
 </style>
-<div id="dcm" class="dcm-industrial">
+<div id="dcm" class="dcm-education">
 
   <section class="hero bleed">
-    <div class="bg" style="background-image:url('assets/img_1564_1.jpg.jpg')"></div>
+    <div class="bg" style="background-image:url('site/school-full-height-toilet-partitions.jpg-1024x1024.png')"></div>
     <div class="wrap">
-      <span class="anno chg">CHANGED: H1 leads with the ad keywords (industrial bathroom partitions, heavy duty lockers) and speaks to builders and site buyers, not only specifiers</span>
-      <span class="eyebrow dyn">Industrial &middot; Queensland</span>
-      <h1 class="h-hero">Industrial bathroom partitions &amp; heavy duty lockers</h1>
-      <h2 class="h-sub"><b>Built for factories, warehouses and resource sites.</b><span class="dyn">Quoted by our Brisbane team in Hendra.</span></h2>
+      <span class="anno chg">CHANGED: H1 leads with school toilet partitions (the main focus) and school lockers (600 searches a month). The old H1 "Durable, safe, designed for learning environments" had no keyword</span>
+      <span class="eyebrow">Education &middot; Schools, TAFEs and universities</span>
+      <h1 class="h-hero">School toilet partitions &amp; lockers</h1>
+      <h2 class="h-sub"><b>Fast turnarounds. 15-year warranty. New anti-tamper locks.</b><span>Supplied and installed by our teams in QLD, NSW, SA and VIC.</span></h2>
       <span class="anno">NEW: two paths at the top. Buyers jump to the short form, specifiers to the FF&amp;E download</span><br>
       <div class="ctas">
         <a class="b b-g" href="#" data-goto="quote"><svg viewBox="0 0 320 512" aria-hidden="true"><path d="M285.5 273L91.1 467.3c-9.4 9.4-24.6 9.4-33.9 0l-22.7-22.7c-9.4-9.4-9.4-24.5 0-33.9L188.5 256 34.5 101.3c-9.3-9.4-9.3-24.5 0-33.9l22.7-22.7c9.4-9.4 24.6-9.4 33.9 0L285.5 239c9.4 9.4 9.4 24.6 0 34z"/></svg>Get a price</a>
         <a class="b b-ow" href="#" data-goto="specify"><svg viewBox="0 0 320 512" aria-hidden="true"><path d="M285.5 273L91.1 467.3c-9.4 9.4-24.6 9.4-33.9 0l-22.7-22.7c-9.4-9.4-9.4-24.5 0-33.9L188.5 256 34.5 101.3c-9.3-9.4-9.3-24.5 0-33.9l22.7-22.7c9.4-9.4 24.6-9.4 33.9 0L285.5 239c9.4 9.4 9.4 24.6 0 34z"/></svg>Specifying? Download FF&amp;E schedules</a>
       </div>
-      <p class="call">No plans yet? Call <a href="tel:1300387228">1300 387 228</a> or send a quick enquiry.</p>
+      <p class="call">Planning a holiday refurbishment? Call <a href="tel:1300387228">1300 387 228</a> or send a quick enquiry.</p>
     </div>
   </section>
   <div class="wrap"><div class="chips">
-    <span>15-year warranty on product and installation</span><span>13mm compact laminate</span><span class="dyn">Brisbane office, Hendra</span><span>200,000+ cubicles delivered</span>
+    <span>1,000+ cubicles made in-house each week</span><span>15-year warranty on product and installation</span><span>New anti-tamper lock indicator</span><span>Made in Australia</span>
   </div></div>
 
-  <!-- State section -->
+  <!-- Three messages -->
   <section class="sec">
     <div class="wrap">
-      <span class="anno">NEW: state section. Local office and the Queensland case study come first (Wacol was listed second, after BHP Olympic Dam in SA)</span>
-      <span class="anno dev">DEV: swap this block by state (e.g. ?state=qld in the ad's final URL suffix). The national Sectors campaign and organic visitors share this URL</span>
-      <div class="state dyn">
+      <span class="anno">NEW: the three messages from the brief (quick turnaround, warranty, anti-tamper locks) up front</span>
+      <h2 class="h-sec">Why schools choose <span class="gr">DuraCube</span></h2>
+      <div class="g3" style="margin-top:26px">
+        <div class="card need"><div class="body">
+          <span class="code">Quick turnaround</span>
+          <h3 class="h-card">Ready for the school holidays</h3>
+          <p>We make more than 1,000 cubicles a week in our own factory and install with our own teams, so amenity upgrades can be planned around term breaks without waiting on overseas supply.</p>
+        </div></div>
+        <div class="card need"><div class="body">
+          <span class="code">Warranty</span>
+          <h3 class="h-card">15 years, product and installation</h3>
+          <p>Every system is covered for 15 years on both the product and the installation. 13mm DuraSafe compact laminate is waterproof and resists impact and graffiti, so school toilets stay in service longer.</p>
+        </div></div>
+        <div class="card need"><div class="body">
+          <span class="code">New</span>
+          <h3 class="h-card">Anti-tamper lock indicator</h3>
+          <p>A heavy-duty, tamper-resistant lock indicator developed with architects working in schools. It resists coins, tools and tampering, with a secure key override so staff can open a cubicle in an emergency.</p>
+          <div class="acts"><a class="tlink" href="#" data-goto="locks">See the new lock</a></div>
+        </div></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Local teams -->
+  <section class="sec soft">
+    <div class="wrap">
+      <span class="anno">NEW: local teams for every state, with QLD and NSW (the priority states) first, plus a Queensland school project</span>
+      <div class="state">
         <div class="office">
-          <span class="eyebrow">Your local team</span>
-          <h2 class="h-sec">Brisbane team, <span class="gr">Hendra</span></h2>
-          <p>Unit 3B, 400 Nudgee Road<br>Hendra QLD 4011</p>
-          <p>Quotes and project support for Queensland factories, warehouses, depots and resource sites, from the people who make and install the systems.</p>
-          <p class="lic">Trade licence 15241086</p>
+          <span class="eyebrow">Local teams</span>
+          <h2 class="h-sec">Schools in every state, <span class="gr">teams close by</span></h2>
+          <div class="offices">
+            <div class="off pri"><b>Brisbane, QLD</b>Unit 3B, 400 Nudgee Road, Hendra QLD 4011<em>Trade licence 15241086</em></div>
+            <div class="off pri"><b>Sydney, NSW</b>13 Pullman Place, Emu Plains NSW 2750<em>Head office and factory</em></div>
+            <div class="off"><b>Adelaide, SA</b>8 Selgar Avenue, Clovelly Park SA 5042<em>Trade licence BLD307712</em></div>
+            <div class="off"><b>Melbourne, VIC</b>12 Metrolink Circuit, Campbellfield VIC 3061</div>
+          </div>
           <div class="row">
             <a class="b b-g" href="tel:1300387228"><svg viewBox="0 0 320 512" aria-hidden="true"><path d="M285.5 273L91.1 467.3c-9.4 9.4-24.6 9.4-33.9 0l-22.7-22.7c-9.4-9.4-9.4-24.5 0-33.9L188.5 256 34.5 101.3c-9.3-9.4-9.3-24.5 0-33.9l22.7-22.7c9.4-9.4 24.6-9.4 33.9 0L285.5 239c9.4 9.4 9.4 24.6 0 34z"/></svg>Call 1300 387 228</a>
             <a class="b b-ow" href="#" data-goto="quote"><svg viewBox="0 0 320 512" aria-hidden="true"><path d="M285.5 273L91.1 467.3c-9.4 9.4-24.6 9.4-33.9 0l-22.7-22.7c-9.4-9.4-9.4-24.5 0-33.9L188.5 256 34.5 101.3c-9.3-9.4-9.3-24.5 0-33.9l22.7-22.7c9.4-9.4 24.6-9.4 33.9 0L285.5 239c9.4 9.4 9.4 24.6 0 34z"/></svg>Get a price</a>
           </div>
         </div>
         <div class="feature">
-          <img src="assets/dura_cube_sus_article2_metroplex_project_2_3a572b4e6d.jpg" alt="Compact laminate toilet partitions in the amenities at 55 Barracks Road, Wacol">
+          <img src="https://duracube.com.au/wp-content/uploads/2026/07/palmview-school-amenity-block.jpg.png" alt="School amenity block at Palmview with woodgrain and grey compact laminate partitions">
           <div class="txt">
-            <span class="tag">Queensland project</span>
-            <h3 class="h-card">55 Barracks Road, Wacol</h3>
-            <p>A 24,000m&sup2; dual-tenancy warehouse built by Douglas Construction with Watson Young for ISPT and Aliro, targeting 5-Star Green Star. DuraCube was engaged early and supplied 18 pedestal-mounted overhead braced systems, five floor-mounted systems with shower seats and six wall-mounted privacy panels, installed inside a tight handover window.</p>
-            <a class="tlink" href="https://duracube.com.au/projects/55-barracks-road/">View project</a>
+            <span class="tag">Queensland school</span>
+            <h3 class="h-card">Palmview Schools, QLD</h3>
+            <p>Part of Queensland's Building Future Schools Program. DuraCube supplied full-height privacy systems across multiple amenity blocks, with ambulant cubicles, compact laminate shower seats and splash nibs.</p>
+            <a class="tlink" href="https://duracube.com.au/projects/palmview-schools/">View project</a>
           </div>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- What do you need -->
-  <section class="sec soft">
-    <div class="wrap">
-      <span class="anno">NEW: buyer-first product groups mapped to the ad group keywords. Each quote button pre-fills the form</span>
-      <h2 class="h-sec">What does your <span class="gr">site need?</span></h2>
-      <p class="lead">Most industrial amenity jobs come down to three things. Pick one for a price, or tell us about the whole change facility.</p>
-      <div class="g3" style="margin-top:28px">
-        <div class="card need">
-          <img src="assets/dx_9996.jpg" alt="Heavy duty pedestal mount toilet partitions in an industrial amenity block">
-          <div class="body">
-            <h3 class="h-card">Heavy duty toilet &amp; shower partitions</h3>
-            <p>Industrial bathroom partitions for factory toilets, warehouse amenities and site change facilities.</p>
-            <ul><li>Raised pedestals or floor fixed, with overhead bracing</li><li>No water traps, so the floor can be hosed out</li><li>Waterproof, graffiti-resistant 13mm compact laminate</li></ul>
-            <div class="acts"><a class="b b-g" href="#" data-goto="quote" data-need="Toilet and shower partitions"><svg viewBox="0 0 320 512" aria-hidden="true"><path d="M285.5 273L91.1 467.3c-9.4 9.4-24.6 9.4-33.9 0l-22.7-22.7c-9.4-9.4-9.4-24.5 0-33.9L188.5 256 34.5 101.3c-9.3-9.4-9.3-24.5 0-33.9l22.7-22.7c9.4-9.4 24.6-9.4 33.9 0L285.5 239c9.4 9.4 9.4 24.6 0 34z"/></svg>Price partitions</a></div>
-          </div>
-        </div>
-        <div class="card need">
-          <img src="assets/1783912506481.jpg" alt="Compact laminate staff lockers with under-bench boot storage">
-          <div class="body">
-            <h3 class="h-card">Heavy duty workshop &amp; staff lockers</h3>
-            <p>Industrial lockers for workers in warehouses, workshops and processing plants. Built for wet gear, dust and daily knocks.</p>
-            <ul><li>Plinth, bench or shoe box seating mounted</li><li>Ventilation slots for drying work gear</li><li>Tamper-proof key, combination or electronic locks</li></ul>
-            <div class="acts"><a class="b b-g" href="#" data-goto="quote" data-need="Lockers"><svg viewBox="0 0 320 512" aria-hidden="true"><path d="M285.5 273L91.1 467.3c-9.4 9.4-24.6 9.4-33.9 0l-22.7-22.7c-9.4-9.4-9.4-24.5 0-33.9L188.5 256 34.5 101.3c-9.3-9.4-9.3-24.5 0-33.9l22.7-22.7c9.4-9.4 24.6-9.4 33.9 0L285.5 239c9.4 9.4 9.4 24.6 0 34z"/></svg>Price lockers</a></div>
-          </div>
-        </div>
-        <div class="card need">
-          <img src="assets/copy_of_scrc_016.jpg" alt="Wall mounted bench seating with coat rail in an employee change room">
-          <div class="body">
-            <h3 class="h-card">Employee change rooms &amp; benches</h3>
-            <p>Bench seating, coat rails, boot storage and vanity benches for a complete factory bathroom or change room fit-out.</p>
-            <ul><li>Keeps high-vis and boots off wet floors</li><li>Vanities precision-cut for basins and tapware</li><li>One supplier and one lead time for the whole room</li></ul>
-            <div class="acts"><a class="b b-g" href="#" data-goto="quote" data-need="Full change room or amenity fit-out"><svg viewBox="0 0 320 512" aria-hidden="true"><path d="M285.5 273L91.1 467.3c-9.4 9.4-24.6 9.4-33.9 0l-22.7-22.7c-9.4-9.4-9.4-24.5 0-33.9L188.5 256 34.5 101.3c-9.3-9.4-9.3-24.5 0-33.9l22.7-22.7c9.4-9.4 24.6-9.4 33.9 0L285.5 239c9.4 9.4 9.4 24.6 0 34z"/></svg>Price a full fit-out</a></div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- Systems -->
+  <!-- Toilet partitions: main focus -->
   <section class="sec">
-    <div class="wrap sys">
-      <span class="anno chg">CHANGED: system copy cut to one line each, with an "Add to quote" link</span>
-      <h2 class="h-sec">DuraCube systems for <span class="gr">industrial projects</span></h2>
-      <div class="g4" style="margin-top:24px">
-        <div class="card"><img src="assets/dx_9996.jpg" alt="Pedestal Mount Overhead Braced toilet partitions"><div class="body"><span class="code">POB</span><h3 class="h-card">Pedestal Mount &ndash; Overhead Braced</h3><p>Raised pedestals and an overhead rail resist heavy impact and leave the floor clear for washdown.</p><div class="acts"><a class="tlink" href="https://duracube.com.au/product/pedestal-mount-overhead-braced/">View system</a><a class="tlink" href="#" data-goto="quote" data-need="Toilet and shower partitions">Add to quote</a></div></div></div>
-        <div class="card"><img src="assets/fob-819x1024.png" alt="Floor Mount Overhead Braced toilet and shower partitions"><div class="body"><span class="code">FOB</span><h3 class="h-card">Floor Mount &ndash; Overhead Braced</h3><p>Floor fixed with overhead bracing for high-volume toilets and showers. Takes moisture and cleaning chemicals.</p><div class="acts"><a class="tlink" href="https://duracube.com.au/product/floor-mount-overhead-braced/">View system</a><a class="tlink" href="#" data-goto="quote" data-need="Toilet and shower partitions">Add to quote</a></div></div></div>
-        <div class="card"><img src="assets/img_1564_1.jpg.jpg" alt="Plinth mounted lockers in an industrial change facility"><div class="body"><span class="code">LPM</span><h3 class="h-card">Lockers &ndash; Plinth Mounted</h3><p>A solid plinth keeps dirt out and the floor clear. Vented doors and tamper-proof locking.</p><div class="acts"><a class="tlink" href="https://duracube.com.au/product/plinth-mounted-lpm/">View system</a><a class="tlink" href="#" data-goto="quote" data-need="Lockers">Add to quote</a></div></div></div>
-        <div class="card"><img src="assets/260327_fdc_stgeorgeillawara_capture_0424.jpg" alt="Bench mounted lockers with integrated seating"><div class="body"><span class="code">LBM</span><h3 class="h-card">Lockers &ndash; Bench Mounted</h3><p>Lockers above integrated seating, so each worker has one station to change at.</p><div class="acts"><a class="tlink" href="https://duracube.com.au/product/bench-mounted-lbm/">View system</a><a class="tlink" href="#" data-goto="quote" data-need="Lockers">Add to quote</a></div></div></div>
-        <div class="card"><img src="assets/1783912506481.jpg" alt="Shoe box seating mounted lockers"><div class="body"><span class="code">LSBSM</span><h3 class="h-card">Lockers &ndash; Shoe Box Seating Mounted</h3><p>An under-bench compartment for work boots keeps dirt off the floor and out of lockers.</p><div class="acts"><a class="tlink" href="https://duracube.com.au/product/lockers-shoe-box-seating-mounted-lsbsm/">View system</a><a class="tlink" href="#" data-goto="quote" data-need="Lockers">Add to quote</a></div></div></div>
-        <div class="card"><img src="assets/copy_of_scrc_016.jpg" alt="Wall bench seating with coat rail"><div class="body"><span class="code">BSW-C</span><h3 class="h-card">Bench Seating &ndash; Wall with Coat Rail</h3><p>Heavy-duty slats and anti-snag hooks keep workwear and high-vis off wet floors.</p><div class="acts"><a class="tlink" href="https://duracube.com.au/product/wall-with-coat-rail-bsw-c/">View system</a><a class="tlink" href="#" data-goto="quote" data-need="Bench seating">Add to quote</a></div></div></div>
-        <div class="card"><img src="assets/bench-seating-shoe-box-wall-with-shelving02-1000x563-1.jpg" alt="Shoe box wall bench seating with shelving"><div class="body"><span class="code">SBW-S</span><h3 class="h-card">Bench Seating &ndash; Shoe Box Wall with Shelving</h3><p>Seating, boot storage and overhead shelving for helmets and bags in one wall unit.</p><div class="acts"><a class="tlink" href="https://duracube.com.au/product/bench-seating-shoe-box-wall-with-shelving-sbw-s/">View system</a><a class="tlink" href="#" data-goto="quote" data-need="Bench seating">Add to quote</a></div></div></div>
-        <div class="card"><img src="assets/studioblackardt-graceville-gracevilleave-247-09-scaled-1.jpg" alt="Compact laminate vanity bench"><div class="body"><span class="code">Vanities</span><h3 class="h-card">Vanity Benches</h3><p>Waterproof, non-porous counters that handle heavy traffic and industrial cleaning chemicals.</p><div class="acts"><a class="tlink" href="https://duracube.com.au/products/vanities/">View system</a><a class="tlink" href="#" data-goto="quote" data-need="Vanities">Add to quote</a></div></div></div>
+    <div class="wrap spot">
+      <span class="anno chg">CHANGED: toilet partitions lead the product section. FHPC and POB get the biggest cards, as the brief's main focus</span>
+      <span class="eyebrow">Toilet partitions</span>
+      <h2 class="h-sec">School toilet partitions <span class="gr">&amp; cubicles</span></h2>
+      <p class="lead">Two systems cover most school toilet blocks: full-height privacy cubicles for inclusive and unisex amenities, and pedestal-mounted cubicles for high-traffic student toilets.</p>
+      <div class="g2" style="margin-top:26px">
+        <div class="card">
+          <img src="assets/fhpc-819x1024.png" alt="Full Height Privacy Core toilet partitions">
+          <div class="body">
+            <span class="code">FHPC</span>
+            <h3 class="h-card">Full Height &ndash; Privacy Core</h3>
+            <p>Floor-to-ceiling cubicles with no gaps to see through, for inclusive and all-gender school toilets. Built to let air flow through, so they meet the NCC without extra mechanical ventilation.</p>
+            <ul><li>Full-height privacy at an economical price</li><li>Suits unisex and all-gender amenities</li><li>Waterproof 13mm DuraSafe compact laminate</li></ul>
+            <div class="acts"><a class="b b-g" href="#" data-goto="quote" data-need="Toilet partitions (FHPC or POB)"><svg viewBox="0 0 320 512" aria-hidden="true"><path d="M285.5 273L91.1 467.3c-9.4 9.4-24.6 9.4-33.9 0l-22.7-22.7c-9.4-9.4-9.4-24.5 0-33.9L188.5 256 34.5 101.3c-9.3-9.4-9.3-24.5 0-33.9l22.7-22.7c9.4-9.4 24.6-9.4 33.9 0L285.5 239c9.4 9.4 9.4 24.6 0 34z"/></svg>Price FHPC</a><a class="tlink" href="https://duracube.com.au/product/privacy-core-partition/">View system</a></div>
+          </div>
+        </div>
+        <div class="card">
+          <img src="assets/dx_9996.jpg" alt="Pedestal Mount Overhead Braced toilet partitions">
+          <div class="body">
+            <span class="code">POB</span>
+            <h3 class="h-card">Pedestal Mount &ndash; Overhead Braced</h3>
+            <p>Raised pedestals and an overhead aluminium rail for student toilets that take a beating. Nothing sits on the floor to trap water, so the block can be hosed out.</p>
+            <ul><li>Resists impact and vandalism</li><li>Graffiti-resistant and easy to clean</li><li>Raised design for fast washdown</li></ul>
+            <div class="acts"><a class="b b-g" href="#" data-goto="quote" data-need="Toilet partitions (FHPC or POB)"><svg viewBox="0 0 320 512" aria-hidden="true"><path d="M285.5 273L91.1 467.3c-9.4 9.4-24.6 9.4-33.9 0l-22.7-22.7c-9.4-9.4-9.4-24.5 0-33.9L188.5 256 34.5 101.3c-9.3-9.4-9.3-24.5 0-33.9l22.7-22.7c9.4-9.4 24.6-9.4 33.9 0L285.5 239c9.4 9.4 9.4 24.6 0 34z"/></svg>Price POB</a><a class="tlink" href="https://duracube.com.au/product/pedestal-mount-overhead-braced/">View system</a></div>
+          </div>
+        </div>
+      </div>
+
+      <h3 class="h-card" style="margin:40px 0 0">Also for school amenities</h3>
+      <div class="g2 sys2" style="margin-top:16px">
+        <div class="card row-card">
+          <img src="https://duracube.com.au/wp-content/uploads/2017/01/partition-full-height-privacy-max02-1-scaled.jpg" alt="Full Height Privacy Max partitions">
+          <div class="body">
+            <span class="code">FHPM</span>
+            <h3 class="h-card">Full Height &ndash; Privacy Max</h3>
+            <p>Our most private cubicle for secondary schools, TAFEs and universities. Fully sealed, with no gaps around doors or panels and acoustic seals to cut noise.</p>
+            <div class="acts"><a class="tlink" href="https://duracube.com.au/product/full-height-privacy-max/">View system</a><a class="tlink" href="#" data-goto="quote" data-need="Full height privacy cubicles (FHPM)">Add to quote</a></div>
+          </div>
+        </div>
+        <div class="card row-card">
+          <img src="assets/lpm-819x1024.png" alt="Plinth mounted school lockers">
+          <div class="body">
+            <span class="code">LPM</span>
+            <h3 class="h-card">School lockers &ndash; Plinth Mounted</h3>
+            <p>Student lockers on a solid plinth for corridors and change rooms. Impact-resistant compact laminate, ventilation slots and tamper-proof locks.</p>
+            <div class="acts"><a class="tlink" href="https://duracube.com.au/product/plinth-mounted-lpm/">View system</a><a class="tlink" href="#" data-goto="quote" data-need="School lockers (LPM)">Add to quote</a></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- New lock -->
+  <section class="sec dark bleed" data-sec="locks">
+    <div class="wrap">
+      <span class="anno">NEW: feature block for the new anti-tamper lock indicator</span>
+      <div class="gym lockfeat">
+        <img src="https://duracube.com.au/wp-content/uploads/2026/11/duracube261027_shonproductions-7507447-scaled-1024x683.jpg" alt="DuraCube anti-tamper lock indicator on a compact laminate toilet partition door">
+        <div class="txt">
+          <span class="eyebrow">New for 2026</span>
+          <h2 class="h-sec">Anti-tamper <span class="gr">lock indicator</span></h2>
+          <p>Toilet locks are one of the first things to get damaged in a school. Our new lock indicator was developed with architects working in schools to stand up to it.</p>
+          <ul><li>Heavy-duty, tamper-resistant indicator</li><li>Resists coins, tools and tampering</li><li>Secure key override for authorised staff in an emergency</li><li>Can be tagged and scheduled as its own type in Revit</li></ul>
+          <div class="acts" style="display:flex;gap:16px;flex-wrap:wrap;margin-top:8px">
+            <a class="b b-g" href="#" data-goto="quote" data-need="Toilet partitions (FHPC or POB)"><svg viewBox="0 0 320 512" aria-hidden="true"><path d="M285.5 273L91.1 467.3c-9.4 9.4-24.6 9.4-33.9 0l-22.7-22.7c-9.4-9.4-9.4-24.5 0-33.9L188.5 256 34.5 101.3c-9.3-9.4-9.3-24.5 0-33.9l22.7-22.7c9.4-9.4 24.6-9.4 33.9 0L285.5 239c9.4 9.4 9.4 24.6 0 34z"/></svg>Get a price</a>
+            <a class="b b-ow" href="https://duracube.com.au/bathroom-joinery-hardware-accessories/"><svg viewBox="0 0 320 512" aria-hidden="true"><path d="M285.5 273L91.1 467.3c-9.4 9.4-24.6 9.4-33.9 0l-22.7-22.7c-9.4-9.4-9.4-24.5 0-33.9L188.5 256 34.5 101.3c-9.3-9.4-9.3-24.5 0-33.9l22.7-22.7c9.4-9.4 24.6-9.4 33.9 0L285.5 239c9.4 9.4 9.4 24.6 0 34z"/></svg>View hardware</a>
+          </div>
+          <p style="margin-top:14px"><span class="anno dev">Confirm with DuraCube which partition systems the lock fits (the new product page doesn't say), and whether there's a test standard we can quote</span></p>
+        </div>
       </div>
     </div>
   </section>
@@ -4425,23 +4491,22 @@ body{overflow-x:clip}
       <span class="anno">NEW: short form on the page. 7 fields, plans optional. Replaces sending every quote click to the Send Us Your Plans page (8 required fields)</span>
       <div class="quote">
         <div>
-          <h2 class="h-sec">Get a price for your <span class="dyn">Queensland</span> site</h2>
-          <p class="lead">No plans yet? No problem. Tell us what you need and our <span class="dyn">Brisbane</span> team will be in touch.</p>
+          <h2 class="h-sec">Get a price for your school project</h2>
+          <p class="lead">Planning a refurbishment or a new amenity block? Send plans if you have them, or just tell us what you need.</p>
           <form class="dcm-form" novalidate>
             <div class="grid">
               <div><label>Name</label><input name="name" autocomplete="name"></div>
               <div><label>Company</label><input name="company" autocomplete="organization"></div>
               <div><label>Email</label><input name="email" type="email" autocomplete="email"></div>
               <div><label>Phone</label><input name="phone" type="tel" autocomplete="tel"></div>
-              <div><label>Project postcode</label><input name="postcode" inputmode="numeric" maxlength="4" placeholder="e.g. 4076"></div>
+              <div><label>Project postcode</label><input name="postcode" inputmode="numeric" maxlength="4" placeholder="e.g. 4000"></div>
               <div><label>What do you need?</label>
                 <select name="need">
                   <option value="">Select one</option>
-                  <option>Toilet and shower partitions</option>
-                  <option>Lockers</option>
-                  <option>Bench seating</option>
-                  <option>Vanities</option>
-                  <option>Full change room or amenity fit-out</option>
+                  <option>Toilet partitions (FHPC or POB)</option>
+                  <option>Full height privacy cubicles (FHPM)</option>
+                  <option>School lockers (LPM)</option>
+                  <option>Full amenity block refurbishment</option>
                   <option>Not sure yet</option>
                 </select>
               </div>
@@ -4461,11 +4526,11 @@ body{overflow-x:clip}
           <h3 class="h-card">What happens next</h3>
           <ol>
             <li>We review what you need, and your plans if you have them.</li>
-            <li>Our <span class="dyn">Brisbane</span> team calls to confirm scope, layout and timing.</li>
+            <li>Our nearest local team calls to confirm scope, layout and timing.</li>
             <li>You get a quote for supply and installation.</li>
           </ol>
           <span class="anno dev">Confirm a response time with DuraCube before adding one (e.g. "within 1 business day")</span>
-          <p style="font-size:14px;color:#999;margin:0">Unit 3B, 400 Nudgee Road, Hendra QLD 4011</p>
+          <p style="font-size:14px;color:#999;margin:0">Offices in Brisbane, Sydney, Adelaide and Melbourne</p>
         </aside>
       </div>
     </div>
@@ -4474,10 +4539,10 @@ body{overflow-x:clip}
   <!-- Projects -->
   <section class="sec">
     <div class="wrap proj">
-      <h2 class="h-sec">More industrial <span class="gr">&amp; resources projects</span></h2>
+      <h2 class="h-sec">More school <span class="gr">&amp; university projects</span></h2>
       <div class="g2" style="margin-top:24px">
-        <div class="card"><img src="assets/project-building-800x600px_bhp-olympic-dam-scf.jpg" alt="BHP Olympic Dam Surface Change Facility"><div class="body"><span class="tag" style="align-self:flex-start">South Australia</span><h3 class="h-card">BHP Olympic Dam Surface Change Facility</h3><p>A 4,000m&sup2; change facility where more than 4,000 workers shower and change each shift. Pedestal Mount Overhead Braced partitions that can be hosed down and leave no water traps, delivered and installed in a single stage hours from the nearest city.</p><div class="acts"><a class="tlink" href="https://duracube.com.au/projects/bhp-olympic-dam-surface-change-facility/">View project</a></div></div></div>
-        <div class="card cta-card"><div class="body"><span class="eyebrow">Case studies</span><h3 class="h-sec">200,000+ cubicles <span class="gr">delivered</span></h3><p>Warehouses, logistics centres, manufacturing plants and resource sites across Australia.</p><div class="acts"><a class="b b-g" href="https://duracube.com.au/inspiration/case-study/"><svg viewBox="0 0 320 512" aria-hidden="true"><path d="M285.5 273L91.1 467.3c-9.4 9.4-24.6 9.4-33.9 0l-22.7-22.7c-9.4-9.4-9.4-24.5 0-33.9L188.5 256 34.5 101.3c-9.3-9.4-9.3-24.5 0-33.9l22.7-22.7c9.4-9.4 24.6-9.4 33.9 0L285.5 239c9.4 9.4 9.4 24.6 0 34z"/></svg>See all case studies</a></div></div></div>
+        <div class="card"><img src="https://duracube.com.au/wp-content/uploads/2017/11/wollongong-uni-3000-series-toilet-and-shower-partitions-1-1.jpg" alt="Charcoal pedestal mount toilet and shower partitions at the University of Wollongong"><div class="body"><span class="tag" style="align-self:flex-start">NSW</span><h3 class="h-card">University of Wollongong URAC</h3><p>Pedestal Mount Overhead Braced partitions and bench seating in DuraSafe 279 Charcoal, installed with KBC Interiors.</p><div class="acts"><a class="tlink" href="https://duracube.com.au/projects/wollongong-university-urac/">View project</a></div></div></div>
+        <div class="card"><img src="https://duracube.com.au/wp-content/uploads/2026/07/wenona-boarding-house-bathroom.jpg.png" alt="Boarding house bathroom at Wenona with Sky blue compact laminate partitions"><div class="body"><span class="tag" style="align-self:flex-start">Boarding school</span><h3 class="h-card">Wenona Boarding House</h3><p>Floor Mount Overhead Braced partitions, matching shower seats and splash nibs in DuraSafe 284 Sky, a calming colour for a biophilic design by Leaf Architecture.</p><div class="acts"><a class="tlink" href="https://duracube.com.au/projects/wenona-boarding-school/">View project</a></div></div></div>
       </div>
     </div>
   </section>
@@ -4485,14 +4550,14 @@ body{overflow-x:clip}
   <!-- Specifiers -->
   <section class="sec soft" data-sec="specify">
     <div class="wrap">
-      <span class="anno chg">MOVED: specifier content (FF&amp;E, Green Star) now sits below the buyer content, one click from the hero</span>
+      <span class="anno chg">MOVED: specifier content (FF&amp;E, compliance, whitepaper) below the buyer content, one click from the hero</span>
       <span class="eyebrow">For architects and specifiers</span>
-      <h2 class="h-sec">Fast-track your industrial <span class="gr">amenity specifications</span></h2>
+      <h2 class="h-sec">Fast-track your school <span class="gr">amenity specifications</span></h2>
       <p class="lead">Pre-filled FF&amp;E schedules with product codes and board selections, ready to drop into your specification.</p>
       <div class="g3 spec" style="margin-top:24px">
-        <div class="card"><div class="body"><h3 class="h-card">Single system FF&amp;E schedule</h3><p>A standalone partition or joinery specification with product codes, compact laminate options and mounting details. Add your DuraSafe colour.</p></div></div>
-        <div class="card"><div class="body"><h3 class="h-card">Full suite industrial schedule</h3><p>A whole change facility or amenity block in one document: toilet and shower partitions, lockers, benches, privacy panels and vanities.</p></div></div>
-        <div class="card"><div class="body"><h3 class="h-card">Green Star and sustainability</h3><p>Global GreenTag GreenRate Level A certified materials with low-VOC finishes help industrial developments earn Green Star credits.</p><div class="acts"><a class="tlink" href="https://duracube.com.au/sustainability/">View our certifications</a></div></div></div>
+        <div class="card"><div class="body"><h3 class="h-card">FF&amp;E schedules</h3><p>Single system or full amenity block schedules covering toilet partitions, lockers, benches and vanities. One contact, one lead time.</p></div></div>
+        <div class="card"><div class="body"><h3 class="h-card">Compliance</h3><p>Designed around the National Construction Code, the Disability Standards for Education 2005 and state guidelines such as NSW's EFSG.</p></div></div>
+        <div class="card"><div class="body"><h3 class="h-card">Safe spaces in Australian schools</h3><p>Our whitepaper on designing school washrooms that reduce bullying, with open-plan layouts and full-height privacy.</p><div class="acts"><a class="tlink" href="https://duracube.com.au/resources/white-paper/">Read the whitepaper</a></div></div></div>
       </div>
       <div style="margin-top:24px;display:flex;gap:14px;flex-wrap:wrap">
         <a class="b b-g" href="https://duracube.com.au/sample-ffe/"><svg viewBox="0 0 320 512" aria-hidden="true"><path d="M285.5 273L91.1 467.3c-9.4 9.4-24.6 9.4-33.9 0l-22.7-22.7c-9.4-9.4-9.4-24.5 0-33.9L188.5 256 34.5 101.3c-9.3-9.4-9.3-24.5 0-33.9l22.7-22.7c9.4-9.4 24.6-9.4 33.9 0L285.5 239c9.4 9.4 9.4 24.6 0 34z"/></svg>Download the FF&amp;E schedules</a>
@@ -4503,9 +4568,10 @@ body{overflow-x:clip}
 
   <section class="sec dark bleed">
     <div class="wrap">
-      <h2 class="h-sec">Built for industrial. <span class="gr">Engineered for long-term performance</span></h2>
-      <p class="lead" style="color:#cfcfcf">From manufacturing plants and logistics centres to warehouses and processing facilities, DuraCube systems are tested and installed for heavy use, moisture, chemicals and high traffic, and backed by a 15-year warranty on product and installation.</p>
-      <div class="stats"><div><b>200,000+</b>Cubicles delivered across Australia</div><div><b>1,000+</b>Cubicles made each week in-house</div></div>
+      <h2 class="h-sec">Built for education. <span class="gr">Engineered for long-term performance</span></h2>
+      <p class="lead" style="color:#cfcfcf">From primary schools to universities and TAFEs, DuraCube systems are made for heavy daily use, moisture and rough treatment, and backed by a 15-year warranty on product and installation.</p>
+      <span class="anno chg">FIXED: the live counters show 0 until they animate. Static numbers used</span>
+      <div class="stats"><div><b>1,000+</b>Cubicles made each week in-house</div><div><b>15 years</b>Warranty on product and installation</div></div>
       <div class="certs"><img src="assets/duracube-15-year-warranty.png.png" alt="15 year warranty"><img src="assets/global-greentag-healthrate-platinum.png.png" alt="GreenTag HealthRate Platinum"><img src="assets/global-greentag-greenrate-level-a.png.png" alt="GreenTag GreenRate Level A"><img src="assets/product-health-declaration.png.png" alt="Product Health Declaration"></div>
       <div style="margin-top:30px"><a class="b b-g" href="#" data-goto="quote"><svg viewBox="0 0 320 512" aria-hidden="true"><path d="M285.5 273L91.1 467.3c-9.4 9.4-24.6 9.4-33.9 0l-22.7-22.7c-9.4-9.4-9.4-24.5 0-33.9L188.5 256 34.5 101.3c-9.3-9.4-9.3-24.5 0-33.9l22.7-22.7c9.4-9.4 24.6-9.4 33.9 0L285.5 239c9.4 9.4 9.4 24.6 0 34z"/></svg>Get a price</a></div>
     </div>
@@ -4514,33 +4580,32 @@ body{overflow-x:clip}
   <div class="mbar"><span class="anno" style="position:absolute;bottom:58px;left:8px">NEW: sticky call and quote bar on mobile</span><a class="c" href="tel:1300387228">Call 1300 387 228</a><a class="q" href="#" data-goto="quote">Free quote</a></div>
 
   <template id="dcm-notes">
-    <nav><b>Mockup pages:</b><br><a href="industrial-qld.html">Industrial (QLD)</a><a href="sports-nsw.html">Sports &amp; Rec (NSW)</a><a href="commercial-sa.html">Commercial (SA)</a><a href="send-us-your-plans.html">Send us your plans</a></nav><p style="font-size:12px;color:#666">Header and footer are the live site's. Only the footer Applications links (Commercial, Sports &amp; Recreation, Industrial) point to these mockup pages.</p>
-    <h2>Industrial page, QLD campaign</h2>
-    <p>Live URL: <code>/industrial-sector/</code>. Campaign: QLD | Sector | Industrial. Also used by the national Sectors campaign (Industrial ad group).</p>
+    <nav><b>Mockup pages:</b><br><a href="education.html">Education</a><a href="commercial.html">Commercial</a><a href="send-us-your-plans.html">Send us your plans</a></nav><p style="font-size:12px;color:#666">Header and footer are the live site's. The footer Education and Commercial links and the header Free Quote button point to these mockup pages. Industrial and Sports &amp; Recreation link to the live site.</p>
+    <h2>Education page</h2>
+    <p>Live URL: <code>/education-sector/</code>. Campaigns: education across all states, with QLD and NSW as the priority.</p>
+    <h3>Brief from Nidhi (DuraCube)</h3>
+    <ul><li>Messages: quick turnaround, warranty and the new anti-tamper lock.</li><li>Main focus: toilet partitions (FHPC and POB).</li><li>Products: POB, FHPC, FHPM and LPM.</li><li>All states, QLD and NSW first.</li></ul>
     <h3>Suggested title and meta</h3>
-    <p><b>Title (60):</b> Industrial Bathroom Partitions &amp; Workshop Lockers | DuraCube<br><b>Meta (154):</b> Heavy duty toilet and shower partitions, workshop lockers and change room benches for factories, warehouses and mine sites. 15-year warranty. Get a price.</p>
-    <h3>Target keywords (Google Ads, 1 Sep to 12 Nov 2026)</h3>
-    <table><tr><th>Keyword</th><th>Impr.</th><th>Clicks</th><th>Where used</th></tr>
-      <tr><td>industrial bathroom partitions</td><td>484</td><td>66</td><td>H1, partitions card</td></tr>
-      <tr><td>heavy duty toilet partitions</td><td>49</td><td>5</td><td>Partitions card</td></tr>
-      <tr><td>storage lockers and cabinets</td><td>43</td><td>3</td><td>Lockers card</td></tr>
-      <tr><td>industrial lockers</td><td>42</td><td>9</td><td>Lockers card, H1</td></tr>
-      <tr><td>factory toilet cubicles</td><td>13</td><td>1</td><td>Partitions card</td></tr>
-      <tr><td>industrial lockers for workers, workshop lockers, warehouse staff lockers</td><td>0</td><td>0</td><td>Lockers card</td></tr>
-      <tr><td>employee change rooms, factory bathroom fitout, factory shower partitions, workshop toilet partitions</td><td>0</td><td>0</td><td>Change rooms card, partitions card</td></tr>
+    <p><b>Title (47):</b> School Toilet Partitions &amp; Lockers | DuraCube<br><b>Meta (147):</b> School toilet partitions and lockers made in Australia. Fast turnarounds for holiday refurbishments, a 15-year warranty and new anti-tamper locks.</p>
+    <h3>Target keywords (Ahrefs AU monthly volume)</h3>
+    <table><tr><th>Keyword</th><th>Volume</th><th>Where used</th></tr>
+      <tr><td>school lockers</td><td>600</td><td>H1, LPM card</td></tr>
+      <tr><td>high school lockers</td><td>150</td><td>LPM card</td></tr>
+      <tr><td>school bathroom</td><td>150</td><td>Partitions intro, form</td></tr>
+      <tr><td>school toilets</td><td>90</td><td>Partitions section, three messages</td></tr>
+      <tr><td>school lockers australia</td><td>90</td><td>LPM card</td></tr>
+      <tr><td>student lockers</td><td>60</td><td>LPM card</td></tr>
+      <tr><td>school bathrooms</td><td>50</td><td>Partitions intro</td></tr>
+      <tr><td>full height toilet partitions</td><td>40</td><td>FHPC and FHPM cards</td></tr>
+      <tr><td>school toilet partitions</td><td>20</td><td>H1, partitions H2</td></tr>
+      <tr><td>full height toilet cubicles</td><td>20</td><td>FHPC card</td></tr>
+      <tr><td>toilet cubicles for schools, school toilet cubicles, school toilet refurbishment</td><td>0</td><td>Long tail, in body copy</td></tr>
     </table>
-    <h3>From the keyword list (SEO)</h3>
-    <table><tr><th>Keyword</th><th>MSV</th><th>Rank</th></tr>
-      <tr><td>heavy duty workshop locker</td><td>150</td><td>Not ranked</td></tr>
-      <tr><td>heavy duty storage locker</td><td>50</td><td>Not ranked</td></tr>
-      <tr><td>industrial change room fitout, heavy duty laminate lockers</td><td>n/a</td><td>To add (Google Ads)</td></tr>
-    </table>
-    <h3>Search terms worth answering on the page</h3>
-    <p>toilet partitions, toilet cubicle, toilet partition doors, toilet cubicle panels, change room cubicles, commercial shower partitions, laminex and polytec toilet partitions (brand comparison searches).</p>
-    <h3>Changes</h3>
-    <ol><li>Short form on the page (7 fields, plans optional).</li><li>Two paths in the hero: Get a price, and Specifying? Download FF&amp;E schedules.</li><li>Brisbane office and the Wacol project first.</li><li>Tap-to-call and a sticky call/quote bar on mobile. Header and footer unchanged.</li><li>Buyer-first product groups using the ad group keywords. Specifier content moved lower.</li></ol>
+    <p>Google Ads: school toilet partitions, school toilet partition systems and toilet cubicles for schools exist but are paused or rarely served. school lockers is live in Lockers | Leads. The keyword list already earmarked these terms for a new education landing page.</p>
+    <h3>Changes from the live page</h3>
+    <ol><li>Keyword-led H1, with the three brief messages in the subheading and a new "Why schools choose DuraCube" section.</li><li>Two paths in the hero: Get a price and Specifying? Download FF&amp;E schedules.</li><li>Local teams for all four states, QLD and NSW first, with a Queensland school project.</li><li>Products cut to FHPC, POB, FHPM and LPM, with FHPC and POB first and largest. FHSC, LWM, BSW-C and vanities removed.</li><li>New anti-tamper lock feature block.</li><li>Short quote form with school-specific options and an optional plans upload.</li><li>Tap-to-call and a sticky call/quote bar on mobile.</li><li>Static stats in place of counters that show 0.</li></ol>
     <h3>Dev notes</h3>
-    <ul><li>Pink dashed outlines mark state-dynamic text. With no <code>?state=</code>, show national copy and the original project order.</li><li>The ads use "Anti-Vandal" headlines, but Google Ads blocks "anti vandal" keywords, so the page says "vandal-resistant" and "graffiti-resistant".</li><li>Keep the FF&amp;E download as a secondary conversion so bidding optimises to form and call leads.</li><li>Separate fix: the footer "FF&amp;E Schedules" link goes to the misspelt /ffe-scheduels/. Left unchanged in this mockup.</li></ul>
+    <ul><li>Nidhi plans to update the existing <code>/education-sector/</code> URL. It's linked in the footer and gets organic traffic, so keep it indexed. Only use noindex for a separate ad-only copy.</li><li>Palmview Schools used Full Height Privacy Ultra (FHPU), not FHPC. Swap in an FHPC school project if DuraCube has one.</li><li>The "1,000+ cubicles a week" figure is from the live education page and is the basis for the quick turnaround message. Confirm before adding a lead time in weeks.</li><li>The project, FHPM and lock images load from duracube.com.au.</li></ul>
   </template>
 </div>
 
@@ -4871,25 +4936,25 @@ body{overflow-x:clip}
 				<div class="elementor-widget-container">
 							<ul class="elementor-icon-list-items">
 							<li class="elementor-icon-list-item">
-											<a href="commercial-sa.html">
+											<a href="commercial.html">
 
 											<span class="elementor-icon-list-text">Commercial </span>
 											</a>
 									</li>
 								<li class="elementor-icon-list-item">
-											<a href="sports-nsw.html">
+											<a href="https://duracube.com.au/sports-recreation-sector/">
 
 											<span class="elementor-icon-list-text">Sports &amp; Recreation</span>
 											</a>
 									</li>
 								<li class="elementor-icon-list-item">
-											<a href="https://duracube.com.au/education-sector/%20">
+											<a href="education.html">
 
 											<span class="elementor-icon-list-text">Education </span>
 											</a>
 									</li>
 								<li class="elementor-icon-list-item">
-											<a href="industrial-qld.html">
+											<a href="https://duracube.com.au/industrial-sector">
 
 											<span class="elementor-icon-list-text">Industrial </span>
 											</a>
@@ -4929,7 +4994,7 @@ body{overflow-x:clip}
 						<input type="email" value="" name="etdl_email_address" placeholder="Email Address" required="" data-sharkid="__0" data-sharklabel="email">
 						<input type="submit" value="SUBMIT" class="button">
 						<div class="g-recaptcha" data-sitekey="6LfHOrYhAAAAAFYssEORydGkLwG5zPKC54wtzxe4" data-callback="correctCaptcha"><div style="width: 304px; height: 78px;"><div><iframe title="reCAPTCHA" width="304" height="78" role="presentation" name="a-38sr03jn45nv" frameborder="0" scrolling="no" sandbox="allow-forms allow-popups allow-same-origin allow-scripts allow-top-navigation allow-modals allow-popups-to-escape-sandbox allow-storage-access-by-user-activation" src="site/anchor.html"></iframe></div><textarea id="g-recaptcha-response" name="g-recaptcha-response" class="g-recaptcha-response" style="width: 250px; height: 40px; border: 1px solid rgb(193, 193, 193); margin: 10px 25px; padding: 0px; resize: none; display: none;"></textarea></div><iframe style="display: none;" src="site/saved_resource(1).html"></iframe></div>
-					<input type="hidden" id="apbct_visible_fields_0" name="apbct_visible_fields" value="eyIwIjp7InZpc2libGVfZmllbGRzIjoiZXRkbF9lbWFpbF9hZGRyZXNzIiwidmlzaWJsZV9maWVsZHNfY291bnQiOjEsImludmlzaWJsZV9maWVsZHMiOiJnLXJlY2FwdGNoYS1yZXNwb25zZSBjdF9ub19jb29raWVfaGlkZGVuX2ZpZWxkIiwiaW52aXNpYmxlX2ZpZWxkc19jb3VudCI6Mn19"><input type="hidden" id="ct_bot_detector_event_token_6170" name="ct_bot_detector_event_token" value="fc81be7e38a6ab375a869b4317f59583ca37a1b521a0d2ca85b7bf28ee99116d"><input name="ct_no_cookie_hidden_field" value="_ct_no_cookie_data_eyJjdF9ib3RfZGV0ZWN0b3JfZXZlbnRfdG9rZW4iOiJmYzgxYmU3ZTM4YTZhYjM3NWE4NjliNDMxN2Y1OTU4M2NhMzdhMWI1MjFhMGQyY2E4NWI3YmYyOGVlOTkxMTZkIiwiY3Rfc2NyZWVuX2luZm8iOiIiLCJjdF9jaGVja2pzIjoxMDkwNDAwMTY1LCJjdF90aW1lem9uZSI6OCwiYXBiY3RfdmlzaWJsZV9maWVsZHMiOiIwIiwiY3RfcHNfdGltZXN0YW1wIjoxNzk0NTM4NDI0LCJjdF9jaGVja2VkX2VtYWlsc19leGlzdCI6IjAiLCJjdF9wb2ludGVyX2RhdGEiOiIwIiwiYXBiY3RfZXhpc3RpbmdfdmlzaXRvciI6MSwiY3RfYm90X2RldGVjdG9yX2Zyb250ZW5kX2RhdGFfbG9nIjpbWyJzdWNjZXNzIiwidGltZXN0YW1wX29uX3NlbmQiLCJ0aW1lc3RhbXBfb25fcmVjZWl2ZWQiLCJldmVudF90b2tlbiIsImpzX2V2ZW50IiwiaG9zdF9uYW1lIiwibmV3X2V2ZW50X3Rva2VuIiwiZXJyb3IiXSxbdHJ1ZSwxNzk0NTM4NDI0LDE3OTQ1Mzg0MjYsImZjODFiZTdlMzhhNmFiMzc1YTg2OWI0MzE3ZjU5NTgzY2EzN2ExYjUyMWEwZDJjYTg1YjdiZjI4ZWU5OTExNmQiLCJET01Db250ZW50TG9hZGVkIiwiZmQtYXBpLmNsZWFudGFsay5vcmciLCJmYzgxYmU3ZTM4YTZhYjM3NWE4NjliNDMxN2Y1OTU4M2NhMzdhMWI1MjFhMGQyY2E4NWI3YmYyOGVlOTkxMTZkIiwiIl1dLCJhcGJjdF9oZWFkbGVzcyI6ZmFsc2UsImN0X2ZrcF90aW1lc3RhbXAiOiIwIiwiY3RfY2hlY2tlZF9lbWFpbHMiOiIwIiwidHlwbyI6W10sImNvbGxlY3RpbmdfdXNlcl9hY3Rpdml0eV9kYXRhIjpbXSwiYXBiY3RfYnJvd3Nlcl9zdGF0ZSI6IntcImJvdGRfbG9naWNfbG9hZGVkXCI6MSxcImJvdGRfd3JhcHBlcl9sb2FkZWRcIjoxLFwiZnJvbnRlbmRfZGF0YV9sb2dcIjpbW1wic3VjY2Vzc1wiLFwidGltZXN0YW1wX29uX3NlbmRcIixcInRpbWVzdGFtcF9vbl9yZWNlaXZlZFwiLFwiZXZlbnRfdG9rZW5cIixcImpzX2V2ZW50XCIsXCJob3N0X25hbWVcIixcIm5ld19ldmVudF90b2tlblwiLFwiZXJyb3JcIl0sW3RydWUsMTc5NDUzODQyNCwxNzk0NTM4NDI2LFwiZmM4MWJlN2UzOGE2YWIzNzVhODY5YjQzMTdmNTk1ODNjYTM3YTFiNTIxYTBkMmNhODViN2JmMjhlZTk5MTE2ZFwiLFwiRE9NQ29udGVudExvYWRlZFwiLFwiZmQtYXBpLmNsZWFudGFsay5vcmdcIixcImZjODFiZTdlMzhhNmFiMzc1YTg2OWI0MzE3ZjU5NTgzY2EzN2ExYjUyMWEwZDJjYTg1YjdiZjI4ZWU5OTExNmRcIixcIlwiXV0sXCJ0cmFuc3BvcnRfZW5hYmxlZFwiOjF9In0=" type="hidden" class="apbct_special_field ct_no_cookie_hidden_field"><shark-icon-container data-sharkidcontainer="__0" style="position: absolute;"><template shadowrootmode="open"><surfhark-icon data-sharkidicon="__0" style="background-image: url(&quot;chrome-extension://ailoabdmgclmfmhdagmlohpjlbpffblp/autofill-action-light.svg&quot;); background-repeat: no-repeat; background-position: left center; background-size: cover; position: absolute; right: 0px; visibility: visible; display: block; z-index: 1; border-width: medium; border-style: none; border-color: currentcolor; border-image: none; cursor: pointer; padding: 0px; transition: none; pointer-events: all; opacity: 1; left: 132.75px; top: -109.75px; width: 18px; height: 18px; min-width: 18px; min-height: 18px;"></surfhark-icon></template></shark-icon-container></form>
+					<input type="hidden" id="apbct_visible_fields_0" name="apbct_visible_fields" value="eyIwIjp7InZpc2libGVfZmllbGRzIjoiZXRkbF9lbWFpbF9hZGRyZXNzIiwidmlzaWJsZV9maWVsZHNfY291bnQiOjEsImludmlzaWJsZV9maWVsZHMiOiJnLXJlY2FwdGNoYS1yZXNwb25zZSBjdF9ub19jb29raWVfaGlkZGVuX2ZpZWxkIiwiaW52aXNpYmxlX2ZpZWxkc19jb3VudCI6Mn19"><input type="hidden" id="ct_bot_detector_event_token_6170" name="ct_bot_detector_event_token" value="fc81be7e38a6ab375a869b4317f59583ca37a1b521a0d2ca85b7bf28ee99116d"><input name="ct_no_cookie_hidden_field" value="_ct_no_cookie_data_eyJjdF9ib3RfZGV0ZWN0b3JfZXZlbnRfdG9rZW4iOiJmYzgxYmU3ZTM4YTZhYjM3NWE4NjliNDMxN2Y1OTU4M2NhMzdhMWI1MjFhMGQyY2E4NWI3YmYyOGVlOTkxMTZkIiwiY3Rfc2NyZWVuX2luZm8iOiIiLCJjdF9jaGVja2pzIjoxMDkwNDAwMTY1LCJjdF90aW1lem9uZSI6OCwiYXBiY3RfdmlzaWJsZV9maWVsZHMiOiIwIiwiY3RfcHNfdGltZXN0YW1wIjoxNzk0NTM4NDI0LCJjdF9jaGVja2VkX2VtYWlsc19leGlzdCI6IjAiLCJjdF9wb2ludGVyX2RhdGEiOiIwIiwiYXBiY3RfZXhpc3RpbmdfdmlzaXRvciI6MSwiY3RfYm90X2RldGVjdG9yX2Zyb250ZW5kX2RhdGFfbG9nIjpbWyJzdWNjZXNzIiwidGltZXN0YW1wX29uX3NlbmQiLCJ0aW1lc3RhbXBfb25fcmVjZWl2ZWQiLCJldmVudF90b2tlbiIsImpzX2V2ZW50IiwiaG9zdF9uYW1lIiwibmV3X2V2ZW50X3Rva2VuIiwiZXJyb3IiXSxbdHJ1ZSwxNzk0NTM4NDI0LDE3OTQ1Mzg0MjYsImZjODFiZTdlMzhhNmFiMzc1YTg2OWI0MzE3ZjU5NTgzY2EzN2ExYjUyMWEwZDJjYTg1YjdiZjI4ZWU5OTExNmQiLCJET01Db250ZW50TG9hZGVkIiwiZmQtYXBpLmNsZWFudGFsay5vcmciLCJmYzgxYmU3ZTM4YTZhYjM3NWE4NjliNDMxN2Y1OTU4M2NhMzdhMWI1MjFhMGQyY2E4NWI3YmYyOGVlOTkxMTZkIiwiIl1dLCJhcGJjdF9oZWFkbGVzcyI6ZmFsc2UsImN0X2ZrcF90aW1lc3RhbXAiOiIwIiwiY3RfY2hlY2tlZF9lbWFpbHMiOiIwIiwidHlwbyI6W10sImNvbGxlY3RpbmdfdXNlcl9hY3Rpdml0eV9kYXRhIjpbXSwiYXBiY3RfYnJvd3Nlcl9zdGF0ZSI6IntcImJvdGRfbG9naWNfbG9hZGVkXCI6MSxcImJvdGRfd3JhcHBlcl9sb2FkZWRcIjoxLFwiZnJvbnRlbmRfZGF0YV9sb2dcIjpbW1wic3VjY2Vzc1wiLFwidGltZXN0YW1wX29uX3NlbmRcIixcInRpbWVzdGFtcF9vbl9yZWNlaXZlZFwiLFwiZXZlbnRfdG9rZW5cIixcImpzX2V2ZW50XCIsXCJob3N0X25hbWVcIixcIm5ld19ldmVudF90b2tlblwiLFwiZXJyb3JcIl0sW3RydWUsMTc5NDUzODQyNCwxNzk0NTM4NDI2LFwiZmM4MWJlN2UzOGE2YWIzNzVhODY5YjQzMTdmNTk1ODNjYTM3YTFiNTIxYTBkMmNhODViN2JmMjhlZTk5MTE2ZFwiLFwiRE9NQ29udGVudExvYWRlZFwiLFwiZmQtYXBpLmNsZWFudGFsay5vcmdcIixcImZjODFiZTdlMzhhNmFiMzc1YTg2OWI0MzE3ZjU5NTgzY2EzN2ExYjUyMWEwZDJjYTg1YjdiZjI4ZWU5OTExNmRcIixcIlwiXV0sXCJ0cmFuc3BvcnRfZW5hYmxlZFwiOjF9In0=" type="hidden" class="apbct_special_field ct_no_cookie_hidden_field"></form>
 				</div>
 				<div id="email-to-download-bg"></div>
 				<script type="text/javascript">

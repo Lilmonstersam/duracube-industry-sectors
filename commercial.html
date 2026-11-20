@@ -6,10 +6,10 @@
 var gform;gform||(document.addEventListener("gform_main_scripts_loaded",function(){gform.scriptsLoaded=!0}),document.addEventListener("gform/theme/scripts_loaded",function(){gform.themeScriptsLoaded=!0}),window.addEventListener("DOMContentLoaded",function(){gform.domLoaded=!0}),gform={domLoaded:!1,scriptsLoaded:!1,themeScriptsLoaded:!1,isFormEditor:()=>"function"==typeof InitializeEditor,callIfLoaded:function(o){return!(!gform.domLoaded||!gform.scriptsLoaded||!gform.themeScriptsLoaded&&!gform.isFormEditor()||(gform.isFormEditor()&&console.warn("The use of gform.initializeOnLoaded() is deprecated in the form editor context and will be removed in Gravity Forms 3.1."),o(),0))},initializeOnLoaded:function(o){gform.callIfLoaded(o)||(document.addEventListener("gform_main_scripts_loaded",()=>{gform.scriptsLoaded=!0,gform.callIfLoaded(o)}),document.addEventListener("gform/theme/scripts_loaded",()=>{gform.themeScriptsLoaded=!0,gform.callIfLoaded(o)}),window.addEventListener("DOMContentLoaded",()=>{gform.domLoaded=!0,gform.callIfLoaded(o)}))},hooks:{action:{},filter:{}},addAction:function(o,r,e,t){gform.addHook("action",o,r,e,t)},addFilter:function(o,r,e,t){gform.addHook("filter",o,r,e,t)},doAction:function(o){gform.doHook("action",o,arguments)},applyFilters:function(o){return gform.doHook("filter",o,arguments)},removeAction:function(o,r){gform.removeHook("action",o,r)},removeFilter:function(o,r,e){gform.removeHook("filter",o,r,e)},addHook:function(o,r,e,t,n){null==gform.hooks[o][r]&&(gform.hooks[o][r]=[]);var d=gform.hooks[o][r];null==n&&(n=r+"_"+d.length),gform.hooks[o][r].push({tag:n,callable:e,priority:t=null==t?10:t})},doHook:function(r,o,e){var t;if(e=Array.prototype.slice.call(e,1),null!=gform.hooks[r][o]&&((o=gform.hooks[r][o]).sort(function(o,r){return o.priority-r.priority}),o.forEach(function(o){"function"!=typeof(t=o.callable)&&(t=window[t]),"action"==r?t.apply(null,e):e[0]=t.apply(null,e)})),"filter"==r)return e[0]},removeHook:function(o,r,t,n){var e;null!=gform.hooks[o][r]&&(e=(e=gform.hooks[o][r]).filter(function(o,r,e){return!!(null!=n&&n!=o.tag||null!=t&&t!=o.priority)}),gform.hooks[o][r]=e)}});
 </script>
 
-	<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">		<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=0"><meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"><meta name="format-detection" content="telephone=no"><title>Gym &amp; Change Room Lockers for Sports Facilities | DuraCube</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">		<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=0"><meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"><meta name="format-detection" content="telephone=no"><title>Commercial Bathroom Partitions &amp; Lockers | DuraCube</title>
 <script type="text/javascript">var ajaxurl = "https://duracube.com.au/wp-admin/admin-ajax.php";</script>
 		<!-- All in One SEO 5.0.1.1 - aioseo.com -->
-	<meta name="description" content="Waterproof gym and change room lockers, shower partitions and bench seating for gyms, sports clubs and aquatic centres. 15-year warranty. Get a price.">
+	<meta name="description" content="Commercial toilet and shower partitions, workplace and end-of-trip lockers, benches and vanities. Made in Australia, 15-year warranty. Get a price today.">
 	<meta name="robots" content="noindex, nofollow">
 	
 	<link rel="canonical" href="https://duracube.com.au/industrial-sector/">
@@ -4311,17 +4311,36 @@ body.dcm-drawer #dcm-drawer{transform:none;visibility:visible}
   #dcm-ui{bottom:66px}
 }
 
+/* offices list (all-state local teams) */
+#dcm .offices{display:grid;grid-template-columns:1fr 1fr;gap:16px 22px;margin:4px 0 6px}
+#dcm .off{font-family:var(--body);font-size:14px;line-height:1.35;color:#bdbdbd;border-top:1px solid #333;padding-top:12px}
+#dcm .off b{display:block;font-family:var(--roo);font-weight:600;font-size:17px;color:#fff;margin-bottom:4px}
+#dcm .off em{display:block;font-style:normal;font-size:12px;color:#8a8a8a;margin-top:4px}
+#dcm .off.pri{border-top:3px solid var(--g)}
+/* horizontal secondary product cards */
+#dcm .sys2 .row-card{flex-direction:row}
+#dcm .sys2 .row-card > img{width:40%;aspect-ratio:auto;object-fit:cover;flex-shrink:0}
+/* lock feature on dark */
+#dcm .lockfeat{background:#111;border-color:#2a2a2a;margin-top:0}
+#dcm .lockfeat .txt p,#dcm .lockfeat li{color:#d6d6d6}
+#dcm .lockfeat .h-sec{color:#fff}
+@media (max-width:767px){
+  #dcm .offices{grid-template-columns:1fr}
+  #dcm .sys2 .row-card{flex-direction:column}
+  #dcm .sys2 .row-card > img{width:100%;aspect-ratio:4/3}
+}
+
 body{overflow-x:clip}
 </style>
-<div id="dcm" class="dcm-sports">
+<div id="dcm" class="dcm-commercial">
 
   <section class="hero bleed">
-    <div class="bg" style="background-image:url('assets/duracubewestonbearsmarch2026_shonproductions-15.jpg')"></div>
+    <div class="bg" style="background-image:url('assets/1-1.png')"></div>
     <div class="wrap">
-      <span class="anno chg">CHANGED: H1 matches the top keywords (change room lockers, gym lockers). The old H1 "Built for sports, built for communities" had no keyword</span>
-      <span class="eyebrow dyn">Sports &amp; recreation &middot; New South Wales</span>
-      <h1 class="h-hero">Gym &amp; change room lockers for sports facilities</h1>
-      <h2 class="h-sub"><b>Waterproof lockers, partitions and benches.</b><span class="dyn">Made in Sydney, quoted by our Emu Plains team.</span></h2>
+      <span class="anno chg">CHANGED: H1 leads with commercial bathroom partitions and commercial lockers, the two ad groups on this page</span>
+      <span class="eyebrow">Commercial &middot; Australia-wide</span>
+      <h1 class="h-hero">Commercial bathroom partitions &amp; lockers</h1>
+      <h2 class="h-sub"><b>Partitions, lockers, benches and vanities from one supplier.</b><span>Local teams in Sydney, Brisbane, Adelaide and Melbourne.</span></h2>
       <span class="anno">NEW: two paths at the top</span><br>
       <div class="ctas">
         <a class="b b-g" href="#" data-goto="quote"><svg viewBox="0 0 320 512" aria-hidden="true"><path d="M285.5 273L91.1 467.3c-9.4 9.4-24.6 9.4-33.9 0l-22.7-22.7c-9.4-9.4-9.4-24.5 0-33.9L188.5 256 34.5 101.3c-9.3-9.4-9.3-24.5 0-33.9l22.7-22.7c9.4-9.4 24.6-9.4 33.9 0L285.5 239c9.4 9.4 9.4 24.6 0 34z"/></svg>Get a price</a>
@@ -4331,91 +4350,93 @@ body{overflow-x:clip}
     </div>
   </section>
   <div class="wrap"><div class="chips">
-    <span>Waterproof compact laminate</span><span>15-year warranty on product and installation</span><span class="dyn">Sydney head office, Emu Plains</span><span>Made in Australia</span>
+    <span>15-year warranty on product and installation</span><span>AS 1428.1 ambulant layouts</span><span>Offices in NSW, QLD, SA and VIC</span><span>Made in Australia</span>
   </div></div>
 
-  <!-- State section -->
+  <!-- Local teams -->
   <section class="sec">
     <div class="wrap">
-      <span class="anno">NEW: state section. Sydney office and the Sydney project first (Rozelle Parklands was third)</span>
-      <span class="anno dev">DEV: state-dynamic block, as on the industrial page</span>
-      <div class="state dyn">
+      <span class="anno chg">CHANGED: the SA-only office section now lists the local teams in all four states, as the campaign now runs Australia-wide</span>
+      <div class="state">
         <div class="office">
-          <span class="eyebrow">Your local team</span>
-          <h2 class="h-sec">Sydney team, <span class="gr">Emu Plains</span></h2>
-          <p>13 Pullman Place<br>Emu Plains NSW 2750</p>
-          <p>Our head office and factory. Quotes, project support and installation for NSW gyms, clubs, councils and aquatic centres.</p>
+          <span class="eyebrow">Local teams</span>
+          <h2 class="h-sec">Local teams, <span class="gr">Australia-wide</span></h2>
+          <div class="offices">
+            <div class="off"><b>Sydney, NSW</b>13 Pullman Place, Emu Plains NSW 2750<em>Head office and factory</em></div>
+            <div class="off"><b>Brisbane, QLD</b>Unit 3B, 400 Nudgee Road, Hendra QLD 4011<em>Trade licence 15241086</em></div>
+            <div class="off"><b>Adelaide, SA</b>8 Selgar Avenue, Clovelly Park SA 5042<em>Trade licence BLD307712</em></div>
+            <div class="off"><b>Melbourne, VIC</b>12 Metrolink Circuit, Campbellfield VIC 3061</div>
+          </div>
           <div class="row">
             <a class="b b-g" href="tel:1300387228"><svg viewBox="0 0 320 512" aria-hidden="true"><path d="M285.5 273L91.1 467.3c-9.4 9.4-24.6 9.4-33.9 0l-22.7-22.7c-9.4-9.4-9.4-24.5 0-33.9L188.5 256 34.5 101.3c-9.3-9.4-9.3-24.5 0-33.9l22.7-22.7c9.4-9.4 24.6-9.4 33.9 0L285.5 239c9.4 9.4 9.4 24.6 0 34z"/></svg>Call 1300 387 228</a>
             <a class="b b-ow" href="#" data-goto="quote"><svg viewBox="0 0 320 512" aria-hidden="true"><path d="M285.5 273L91.1 467.3c-9.4 9.4-24.6 9.4-33.9 0l-22.7-22.7c-9.4-9.4-9.4-24.5 0-33.9L188.5 256 34.5 101.3c-9.3-9.4-9.3-24.5 0-33.9l22.7-22.7c9.4-9.4 24.6-9.4 33.9 0L285.5 239c9.4 9.4 9.4 24.6 0 34z"/></svg>Get a price</a>
           </div>
         </div>
         <div class="feature">
-          <img src="assets/duracuberozelleparklandsjune2025_shonproductions-41-scaled.jpg" alt="Arctic White compact laminate toilet partitions at Rozelle Parklands">
+          <img src="assets/95-grenfell-st-2-1-scaled.jpg" alt="End-of-trip facility at 95 Grenfell Street with woodgrain lockers and bench seating">
           <div class="txt">
-            <span class="tag">Sydney project</span>
-            <h3 class="h-card">Rozelle Parklands, Sydney</h3>
-            <p>Almost 10 hectares of new parkland on the former Rozelle Railyards, designed by Hassell for Transport for NSW. DuraCube supplied vandal-resistant Pedestal Mount Overhead Braced partitions in DuraSafe 111 Arctic White, detailed to fit the building's curved walls.</p>
-            <a class="tlink" href="https://duracube.com.au/projects/rozelle-parklands-facilities-enhancement-building-02/">View project</a>
+            <span class="tag">Adelaide project</span>
+            <h3 class="h-card">95 Grenfell Street, Adelaide</h3>
+            <p>A 21-level premium office tower in the Adelaide CBD. The refurbishment added an end-of-trip facility, with MPH Architects specifying extra lockers, basins and showers for male and female users to support active commuting and tenant retention.</p>
+            <a class="tlink" href="https://duracube.com.au/projects/95-grenfell-street/">View project</a>
           </div>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- Gym & change room lockers -->
+  <!-- What do you need -->
   <section class="sec soft">
-    <div class="wrap spot">
-      <span class="anno">NEW: gym and change room lockers section near the top. gym lockers and sports lockers score below average for landing page experience because the page barely mentions lockers</span>
-      <span class="eyebrow">Lockers</span>
-      <h2 class="h-sec">Gym, change room <span class="gr">&amp; sports lockers</span></h2>
-      <p class="lead">Lockers for gym change rooms, sports clubs, team rooms and pool change rooms. DuraSafe 13mm compact laminate doors with waterproof carcass options, so they won't swell or rot in wet areas.</p>
-      <div class="g2" style="margin-top:26px">
-        <div class="card">
-          <img src="assets/player-locker-819x1024.png" alt="Bench seat mounted player lockers with shoe storage">
+    <div class="wrap">
+      <span class="anno">NEW: commercial and workplace lockers get their own block. commercial lockers, workplace lockers and end of trip lockers all score below average for landing page experience on this page</span>
+      <h2 class="h-sec">What does your <span class="gr">project need?</span></h2>
+      <p class="lead">Commercial toilet cubicles and shower partitions, office and end-of-trip lockers, or the whole bathroom fit-out.</p>
+      <div class="g3" style="margin-top:28px">
+        <div class="card need">
+          <img src="assets/commercial-sector-fhpu-819x1024.png" alt="Full height commercial toilet partitions">
           <div class="body">
-            <span class="code">LBSM-P &middot; LSBSM-P &middot; LBSM-C</span>
-            <h3 class="h-card">Player lockers with bench seating</h3>
-            <p>Storage and seating in one unit for team change rooms and gyms. Add under-bench shoe storage (LSBSM-P), or choose LBSM-C, built to Cricket Australia guidelines.</p>
-            <div class="acts"><a class="b b-g" href="#" data-goto="quote" data-need="Lockers"><svg viewBox="0 0 320 512" aria-hidden="true"><path d="M285.5 273L91.1 467.3c-9.4 9.4-24.6 9.4-33.9 0l-22.7-22.7c-9.4-9.4-9.4-24.5 0-33.9L188.5 256 34.5 101.3c-9.3-9.4-9.3-24.5 0-33.9l22.7-22.7c9.4-9.4 24.6-9.4 33.9 0L285.5 239c9.4 9.4 9.4 24.6 0 34z"/></svg>Price player lockers</a><a class="tlink" href="https://duracube.com.au/product/bench-seat-mount-player/">View system</a></div>
+            <h3 class="h-card">Commercial toilet &amp; shower partitions</h3>
+            <p>Commercial bathroom partitions for offices, retail and public amenities, from standard cubicles to full-height privacy.</p>
+            <ul><li>AS 1428.1 ambulant and accessible layouts</li><li>Waterproof 13mm DuraSafe compact laminate</li><li>Revit files and shop drawings</li></ul>
+            <div class="acts"><a class="b b-g" href="#" data-goto="quote" data-need="Toilet and shower partitions"><svg viewBox="0 0 320 512" aria-hidden="true"><path d="M285.5 273L91.1 467.3c-9.4 9.4-24.6 9.4-33.9 0l-22.7-22.7c-9.4-9.4-9.4-24.5 0-33.9L188.5 256 34.5 101.3c-9.3-9.4-9.3-24.5 0-33.9l22.7-22.7c9.4-9.4 24.6-9.4 33.9 0L285.5 239c9.4 9.4 9.4 24.6 0 34z"/></svg>Price partitions</a></div>
           </div>
         </div>
-        <div class="card">
-          <img src="assets/lpm-819x1024.png" alt="Plinth mounted compact laminate lockers">
+        <div class="card need">
+          <img src="assets/commercial-sector-lpm-eot-819x1024.png" alt="Plinth mounted end-of-trip lockers">
           <div class="body">
-            <span class="code">LPM</span>
-            <h3 class="h-card">Plinth mounted change room lockers</h3>
-            <p>Modular lockers on a solid plinth for gyms, aquatic centres and referee rooms. Garment hanging, shoe compartments and secure locking.</p>
-            <div class="acts"><a class="b b-g" href="#" data-goto="quote" data-need="Lockers"><svg viewBox="0 0 320 512" aria-hidden="true"><path d="M285.5 273L91.1 467.3c-9.4 9.4-24.6 9.4-33.9 0l-22.7-22.7c-9.4-9.4-9.4-24.5 0-33.9L188.5 256 34.5 101.3c-9.3-9.4-9.3-24.5 0-33.9l22.7-22.7c9.4-9.4 24.6-9.4 33.9 0L285.5 239c9.4 9.4 9.4 24.6 0 34z"/></svg>Price change room lockers</a><a class="tlink" href="https://duracube.com.au/product/plinth-mounted-lpm/">View system</a></div>
+            <h3 class="h-card">Commercial &amp; workplace lockers</h3>
+            <p>Office, staff and end-of-trip lockers. Plinth, wall or bench mounted, with soft-close hinges, ventilation and smart locking.</p>
+            <ul><li>Waterproof options for change rooms</li><li>Custom widths and door configurations</li><li>Towel, airing and ironing units</li></ul>
+            <div class="acts"><a class="b b-g" href="#" data-goto="quote" data-need="Lockers"><svg viewBox="0 0 320 512" aria-hidden="true"><path d="M285.5 273L91.1 467.3c-9.4 9.4-24.6 9.4-33.9 0l-22.7-22.7c-9.4-9.4-9.4-24.5 0-33.9L188.5 256 34.5 101.3c-9.3-9.4-9.3-24.5 0-33.9l22.7-22.7c9.4-9.4 24.6-9.4 33.9 0L285.5 239c9.4 9.4 9.4 24.6 0 34z"/></svg>Price lockers</a></div>
           </div>
         </div>
-      </div>
-      <p class="h-small" style="margin:24px 0 4px">Lock options</p>
-      <div class="locks"><span>Electronic touch pad</span><span>Electronic button</span><span>Mechanical combination</span><span>Padlock hasp</span><span>Standard key</span></div>
-      <div class="gym">
-        <img onerror="this.removeAttribute('onerror');this.src='assets/fob-819x1024.png'" src="https://duracube.com.au/wp-content/uploads/2020/08/zoo-bathroom3-zoo-fitness-scaled.jpg" alt="Charcoal compact laminate toilet and shower partitions in the ladies' bathrooms at Zoo Fitness Penrith">
-        <div class="txt">
-          <span class="tag">Gym project &middot; Penrith NSW</span>
-          <h3 class="h-card">Zoo Fitness, Penrith</h3>
-          <p>Floor Mount Ceiling Fixed toilet and shower partitions with matching shower seats for the ladies' bathrooms, in DuraSafe Charcoal 279 with black hardware.</p>
-          <a class="tlink" href="https://duracube.com.au/project/zoo-fitness-ladies-bathrooms/">View project</a>
-          <p style="margin-top:14px"><span class="anno dev">Zoo Fitness is partitions, not lockers. Swap in a gym locker project if DuraCube has one. The image loads from duracube.com.au</span></p>
+        <div class="card need">
+          <img src="assets/vanity-benches-819x1024.png" alt="Compact laminate vanity bench in a commercial washroom">
+          <div class="body">
+            <h3 class="h-card">Commercial bathroom fit-out</h3>
+            <p>Partitions, lockers, bench seating and vanities with one supplier, one lead time and one warranty.</p>
+            <ul><li>Coordinated colours across every element</li><li>Vanities milled for basins and tapware</li><li>Supply and installation</li></ul>
+            <div class="acts"><a class="b b-g" href="#" data-goto="quote" data-need="Full change room or amenity fit-out"><svg viewBox="0 0 320 512" aria-hidden="true"><path d="M285.5 273L91.1 467.3c-9.4 9.4-24.6 9.4-33.9 0l-22.7-22.7c-9.4-9.4-9.4-24.5 0-33.9L188.5 256 34.5 101.3c-9.3-9.4-9.3-24.5 0-33.9l22.7-22.7c9.4-9.4 24.6-9.4 33.9 0L285.5 239c9.4 9.4 9.4 24.6 0 34z"/></svg>Price a full fit-out</a></div>
+          </div>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- Partitions & seating -->
+  <!-- Systems -->
   <section class="sec">
     <div class="wrap sys">
-      <span class="anno chg">CHANGED: products grouped by what buyers search for (shower partitions, change room seating)</span>
-      <h2 class="h-sec">Change room partitions <span class="gr">&amp; bench seating</span></h2>
-      <p class="lead">Gym shower partitions, toilet cubicles and benches for sports club washrooms and swimming pool and aquatic centre change rooms.</p>
+      <span class="anno chg">CHANGED: shorter system copy with "Add to quote"</span>
+      <h2 class="h-sec">DuraCube systems for <span class="gr">commercial projects</span></h2>
       <div class="g4" style="margin-top:24px">
-        <div class="card"><img src="assets/fob-819x1024.png" alt="Floor Mount Overhead Braced shower partitions"><div class="body"><span class="code">FOB</span><h3 class="h-card">Floor Mount &ndash; Overhead Braced</h3><p>Stable toilet and gym shower partitions that take constant moisture and hose-down cleaning.</p><div class="acts"><a class="tlink" href="https://duracube.com.au/product/floor-mount-overhead-braced/">View system</a><a class="tlink" href="#" data-goto="quote" data-need="Toilet and shower partitions">Add to quote</a></div></div></div>
-        <div class="card"><img src="assets/fhpc-819x1024.png" alt="Full Height Privacy Core partitions"><div class="body"><span class="code">FHPC</span><h3 class="h-card">Full Height &ndash; Privacy Core</h3><p>Floor-to-ceiling privacy for referee rooms and unisex amenities, without extra mechanical ventilation under the NCC.</p><div class="acts"><a class="tlink" href="https://duracube.com.au/product/privacy-core-partition/">View system</a><a class="tlink" href="#" data-goto="quote" data-need="Toilet and shower partitions">Add to quote</a></div></div></div>
-        <div class="card"><img src="assets/sports-sector-bswc-819x1024.png" alt="Wall bench seating with coat rail"><div class="body"><span class="code">BSW-C</span><h3 class="h-card">Bench Seating &ndash; Wall with Coat Rail</h3><p>Seating and gear hanging in one footprint. Keeps kit off wet floors.</p><div class="acts"><a class="tlink" href="https://duracube.com.au/product/wall-with-coat-rail-bsw-c/">View system</a><a class="tlink" href="#" data-goto="quote" data-need="Bench seating">Add to quote</a></div></div></div>
-        <div class="card"><img src="assets/sbw-s-768x960.png" alt="Wall bench seating with shelving"><div class="body"><span class="code">BSW-S</span><h3 class="h-card">Bench Seating &ndash; Wall with Shelving</h3><p>Bench seating with overhead shelving for bags and gear. Easier to clean and safer to move through.</p><div class="acts"><a class="tlink" href="https://duracube.com.au/product/wall-with-shelving-bsw-s/">View system</a><a class="tlink" href="#" data-goto="quote" data-need="Bench seating">Add to quote</a></div></div></div>
+        <div class="card"><img src="assets/commercial-sector-fhpu-819x1024.png" alt="Full Height Privacy Ultra partitions"><div class="body"><span class="code">FHPU</span><h3 class="h-card">Full Height &ndash; Privacy Ultra</h3><p>Floor-to-ceiling cubicles with zero sightlines and concealed fixings for premium washrooms.</p><div class="acts"><a class="tlink" href="https://duracube.com.au/product/full-height-privacy-ultra-fhpu/">View system</a><a class="tlink" href="#" data-goto="quote" data-need="Toilet and shower partitions">Add to quote</a></div></div></div>
+        <div class="card"><img src="assets/commercial-sector-lpm-eot-819x1024.png" alt="Plinth mounted end-of-trip lockers"><div class="body"><span class="code">LPM-EOT</span><h3 class="h-card">Lockers &ndash; Plinth Mounted End-of-Trip</h3><p>Secure commuter storage on a solid base, with soft-close hinges and ventilation.</p><div class="acts"><a class="tlink" href="https://duracube.com.au/product/lockers-plinth-mounted-end-of-trip-lpm-eot/">View system</a><a class="tlink" href="#" data-goto="quote" data-need="Lockers">Add to quote</a></div></div></div>
+        <div class="card"><img src="assets/commercial-sector-lwm-eot-819x1024.png" alt="Wall mounted end-of-trip lockers"><div class="body"><span class="code">LWM-EOT</span><h3 class="h-card">Lockers &ndash; Wall Mounted End-of-Trip</h3><p>Off the floor for easier cleaning and more usable floor area.</p><div class="acts"><a class="tlink" href="https://duracube.com.au/product/lockers-wall-mounted-end-of-trip-lwm-eot/">View system</a><a class="tlink" href="#" data-goto="quote" data-need="Lockers">Add to quote</a></div></div></div>
+        <div class="card"><img src="assets/lsbsm-819x1024.png" alt="Shoe box seating mounted lockers"><div class="body"><span class="code">LSBSM</span><h3 class="h-card">Lockers &ndash; Shoe Box Seating Mounted</h3><p>Seating and storage in one footprint for EOT facilities and health clubs.</p><div class="acts"><a class="tlink" href="https://duracube.com.au/product/lockers-shoe-box-seating-mounted-lsbsm/">View system</a><a class="tlink" href="#" data-goto="quote" data-need="Lockers">Add to quote</a></div></div></div>
+        <div class="card"><img src="assets/bsi-1-819x1024.png" alt="Island bench seating"><div class="body"><span class="code">BSI</span><h3 class="h-card">Bench Seating &ndash; Island</h3><p>Commercial bench seating with double-sided access for open change rooms.</p><div class="acts"><a class="tlink" href="https://duracube.com.au/product/island-bsi/">View system</a><a class="tlink" href="#" data-goto="quote" data-need="Bench seating">Add to quote</a></div></div></div>
+        <div class="card"><img src="assets/vanity-benches-819x1024.png" alt="Vanity benches"><div class="body"><span class="code">Vanities</span><h3 class="h-card">Vanity Benches</h3><p>Waterproof, hygienic counters milled for under-mount or drop-in basins.</p><div class="acts"><a class="tlink" href="https://duracube.com.au/products/vanities/">View system</a><a class="tlink" href="#" data-goto="quote" data-need="Vanities">Add to quote</a></div></div></div>
+        <div class="card"><img src="assets/dura_cube_sus_article3_partitioning_systems_2_6dec8743c7.jpg" alt="Commercial toilet cubicles"><div class="body"><span class="code">All partitions</span><h3 class="h-card">Commercial toilet cubicles</h3><p>Pedestal, floor and ceiling fixed systems to suit budget, traffic and ceiling height.</p><div class="acts"><a class="tlink" href="https://duracube.com.au/products/partitioning-systems/">View range</a><a class="tlink" href="#" data-goto="quote" data-need="Toilet and shower partitions">Add to quote</a></div></div></div>
+        <div class="card"><img src="assets/1-1.png" alt="End-of-trip locker wall"><div class="body"><span class="code">All lockers</span><h3 class="h-card">Office and staff lockers</h3><p>Every locker system, including accessible ironing stations and DDA lockers.</p><div class="acts"><a class="tlink" href="https://duracube.com.au/products/locker-systems/">View range</a><a class="tlink" href="#" data-goto="quote" data-need="Lockers">Add to quote</a></div></div></div>
       </div>
     </div>
   </section>
@@ -4425,15 +4446,15 @@ body{overflow-x:clip}
       <span class="anno">NEW: short form on the page. 7 fields, plans optional. Replaces sending every quote click to the Send Us Your Plans page (8 required fields)</span>
       <div class="quote">
         <div>
-          <h2 class="h-sec">Get a price for your <span class="dyn">NSW</span> facility</h2>
-          <p class="lead">Lockers for one change room or a full aquatic centre fit-out. No plans needed to get started.</p>
+          <h2 class="h-sec">Get a price for your commercial project</h2>
+          <p class="lead">One washroom or a full end-of-trip facility. Send plans if you have them, or just tell us what you need.</p>
           <form class="dcm-form" novalidate>
             <div class="grid">
               <div><label>Name</label><input name="name" autocomplete="name"></div>
               <div><label>Company</label><input name="company" autocomplete="organization"></div>
               <div><label>Email</label><input name="email" type="email" autocomplete="email"></div>
               <div><label>Phone</label><input name="phone" type="tel" autocomplete="tel"></div>
-              <div><label>Project postcode</label><input name="postcode" inputmode="numeric" maxlength="4" placeholder="e.g. 2750"></div>
+              <div><label>Project postcode</label><input name="postcode" inputmode="numeric" maxlength="4" placeholder="e.g. 2000"></div>
               <div><label>What do you need?</label>
                 <select name="need">
                   <option value="">Select one</option>
@@ -4461,11 +4482,11 @@ body{overflow-x:clip}
           <h3 class="h-card">What happens next</h3>
           <ol>
             <li>We review what you need, and your plans if you have them.</li>
-            <li>Our <span class="dyn">Sydney</span> team calls to confirm scope, layout and timing.</li>
+            <li>Our nearest local team calls to confirm scope, layout and timing.</li>
             <li>You get a quote for supply and installation.</li>
           </ol>
           <span class="anno dev">Confirm a response time with DuraCube before adding one (e.g. "within 1 business day")</span>
-          <p style="font-size:14px;color:#999;margin:0">13 Pullman Place, Emu Plains NSW 2750</p>
+          <p style="font-size:14px;color:#999;margin:0">Offices in Sydney, Brisbane, Adelaide and Melbourne</p>
         </aside>
       </div>
     </div>
@@ -4474,34 +4495,36 @@ body{overflow-x:clip}
   <!-- Projects -->
   <section class="sec">
     <div class="wrap proj">
-      <h2 class="h-sec">More sports <span class="gr">&amp; community projects</span></h2>
+      <h2 class="h-sec">More commercial <span class="gr">&amp; end-of-trip projects</span></h2>
       <div class="g2" style="margin-top:24px">
-        <div class="card"><img src="assets/duracubewestonbearsmarch2026_shonproductions-15.jpg" alt="Weston Bears Park change room"><div class="body"><span class="tag" style="align-self:flex-start">Hunter Region, NSW</span><h3 class="h-card">Weston Bears Park</h3><p>A Cessnock City Council upgrade with Floor Mount Ceiling Fixed partitions in Philippine Teak, ambulant cubicles, shower seats, vanities and new player lockers, delivering the club's first dedicated female amenities.</p><div class="acts"><a class="tlink" href="https://duracube.com.au/projects/weston-bears-park/">View project</a></div></div></div>
-        <div class="card"><img src="assets/modbury-cc-22-1.jpg" alt="Modbury Sports and Community Club change room"><div class="body"><span class="tag" style="align-self:flex-start">South Australia</span><h3 class="h-card">Modbury Sports and Community Club</h3><p>An $8.7 million redevelopment with Full Height Privacy Core partitions, plinth-mounted lockers and bench seating across four unisex change rooms and umpire rooms.</p><div class="acts"><a class="tlink" href="https://duracube.com.au/projects/modbury-sports-and-community-club-redevelopment/">View project</a></div></div></div>
+        <div class="card"><img src="assets/1-1.png" alt="End-of-trip facility at No.1 Martin Place"><div class="body"><span class="tag" style="align-self:flex-start">Sydney</span><h3 class="h-card">No.1 Martin Place</h3><p>A benchmark end-of-trip facility for Charter Hall at one of Sydney's best-known addresses, with durable finishes and seamless layouts.</p><div class="acts"><a class="tlink" href="https://duracube.com.au/projects/no-1-martin-place/">View project</a></div></div></div>
+        <div class="card"><img src="assets/dura_cube_sus_article3_partitioning_systems_2_6dec8743c7.jpg" alt="Melbourne Walk amenities"><div class="body"><span class="tag" style="align-self:flex-start">Melbourne</span><h3 class="h-card">Melbourne Walk, IHG Hotels</h3><p>Bathroom joinery systems across a mixed-use hotel and retail precinct on Bourke Street Mall, chosen for high public traffic.</p><div class="acts"><a class="tlink" href="https://duracube.com.au/projects/melbourne-walk-ihg-hotels/">View project</a></div></div></div>
       </div>
     </div>
   </section>
 
   <section class="sec soft" data-sec="specify">
     <div class="wrap">
-      <span class="anno chg">MOVED: specifier content below the buyer content</span>
+      <span class="anno chg">MOVED: specifier content (FF&amp;E, NCC, EOT whitepaper) below the buyer content</span>
       <span class="eyebrow">For architects and specifiers</span>
-      <h2 class="h-sec">Fast-track your <span class="gr">change room specifications</span></h2>
-      <p class="lead">Pre-filled FF&amp;E schedules with product codes and board selections. Specify a single system, or a whole clubroom or aquatic change room in one document.</p>
+      <h2 class="h-sec">Fast-track your commercial <span class="gr">washroom specifications</span></h2>
+      <p class="lead">Pre-filled FF&amp;E schedules with product codes and board selections, plus NCC and AS 1428.1 guidance.</p>
       <div class="g3 spec" style="margin-top:24px">
         <div class="card"><div class="body"><h3 class="h-card">Single system FF&amp;E schedule</h3><p>A standalone partition or joinery specification, ready for your DuraSafe colour.</p></div></div>
-        <div class="card"><div class="body"><h3 class="h-card">Full suite change room schedule</h3><p>Toilet and shower partitions, lockers, benches, privacy panels and vanities. One contact, one lead time.</p></div></div>
-        <div class="card"><div class="body"><h3 class="h-card">Inclusive, gender-equitable design</h3><p>Layouts, colours and full-height privacy options that cater for every player, official and spectator.</p><div class="acts"><a class="tlink" href="https://duracube.com.au/journal/">Read the article</a></div></div></div>
+        <div class="card"><div class="body"><h3 class="h-card">Full suite end-of-trip schedule</h3><p>Toilet cubicles, shower partitions, lockers, benches and vanities in one master document.</p></div></div>
+        <div class="card"><div class="body"><h3 class="h-card">End-of-trip whitepaper</h3><p>Layout planning, material selection and compliance for EOT facilities that get used.</p><div class="acts"><a class="tlink" href="https://duracube.com.au/resources/white-paper/">Read the whitepaper</a></div></div></div>
       </div>
-      <div style="margin-top:24px"><a class="b b-g" href="https://duracube.com.au/sample-ffe/"><svg viewBox="0 0 320 512" aria-hidden="true"><path d="M285.5 273L91.1 467.3c-9.4 9.4-24.6 9.4-33.9 0l-22.7-22.7c-9.4-9.4-9.4-24.5 0-33.9L188.5 256 34.5 101.3c-9.3-9.4-9.3-24.5 0-33.9l22.7-22.7c9.4-9.4 24.6-9.4 33.9 0L285.5 239c9.4 9.4 9.4 24.6 0 34z"/></svg>Download the FF&amp;E schedules</a></div>
+      <div style="margin-top:24px;display:flex;gap:14px;flex-wrap:wrap">
+        <a class="b b-g" href="https://duracube.com.au/sample-ffe/"><svg viewBox="0 0 320 512" aria-hidden="true"><path d="M285.5 273L91.1 467.3c-9.4 9.4-24.6 9.4-33.9 0l-22.7-22.7c-9.4-9.4-9.4-24.5 0-33.9L188.5 256 34.5 101.3c-9.3-9.4-9.3-24.5 0-33.9l22.7-22.7c9.4-9.4 24.6-9.4 33.9 0L285.5 239c9.4 9.4 9.4 24.6 0 34z"/></svg>Download the FF&amp;E schedules</a>
+        <a class="b b-ob" href="https://duracube.com.au/resources/revit-bim-models/"><svg viewBox="0 0 320 512" aria-hidden="true"><path d="M285.5 273L91.1 467.3c-9.4 9.4-24.6 9.4-33.9 0l-22.7-22.7c-9.4-9.4-9.4-24.5 0-33.9L188.5 256 34.5 101.3c-9.3-9.4-9.3-24.5 0-33.9l22.7-22.7c9.4-9.4 24.6-9.4 33.9 0L285.5 239c9.4 9.4 9.4 24.6 0 34z"/></svg>Access our BIM files</a>
+      </div>
     </div>
   </section>
 
   <section class="sec dark bleed">
     <div class="wrap">
-      <h2 class="h-sec">Built for sport. <span class="gr">Engineered for long-term performance</span></h2>
-      <p class="lead" style="color:#cfcfcf">From community clubs and gyms to aquatic centres and elite training facilities, every system is built for high traffic, constant moisture and rough daily use, and backed by a 15-year warranty on product and installation.</p>
-      <span class="anno chg">FIXED: the live counters show 0 until they animate. Static numbers used</span>
+      <h2 class="h-sec">Built for commercial. <span class="gr">Engineered for long-term performance</span></h2>
+      <p class="lead" style="color:#cfcfcf">From offices and retail centres to public facilities and transport hubs, DuraCube bathroom joinery delivers long-lasting function and a wide range of colours and finishes, backed by a 15-year warranty on product and installation.</p>
       <div class="stats"><div><b>200,000+</b>Systems delivered across Australia</div><div><b>5 million+</b>m&sup2; of compact laminate installed</div></div>
       <div class="certs"><img src="assets/duracube-15-year-warranty.png.png" alt="15 year warranty"><img src="assets/global-greentag-healthrate-platinum.png.png" alt="GreenTag HealthRate Platinum"><img src="assets/global-greentag-greenrate-level-a.png.png" alt="GreenTag GreenRate Level A"><img src="assets/product-health-declaration.png.png" alt="Product Health Declaration"></div>
       <div style="margin-top:30px"><a class="b b-g" href="#" data-goto="quote"><svg viewBox="0 0 320 512" aria-hidden="true"><path d="M285.5 273L91.1 467.3c-9.4 9.4-24.6 9.4-33.9 0l-22.7-22.7c-9.4-9.4-9.4-24.5 0-33.9L188.5 256 34.5 101.3c-9.3-9.4-9.3-24.5 0-33.9l22.7-22.7c9.4-9.4 24.6-9.4 33.9 0L285.5 239c9.4 9.4 9.4 24.6 0 34z"/></svg>Get a price</a></div>
@@ -4511,34 +4534,37 @@ body{overflow-x:clip}
   <div class="mbar"><span class="anno" style="position:absolute;bottom:58px;left:8px">NEW: sticky call and quote bar on mobile</span><a class="c" href="tel:1300387228">Call 1300 387 228</a><a class="q" href="#" data-goto="quote">Free quote</a></div>
 
   <template id="dcm-notes">
-    <nav><b>Mockup pages:</b><br><a href="industrial-qld.html">Industrial (QLD)</a><a href="sports-nsw.html">Sports &amp; Rec (NSW)</a><a href="commercial-sa.html">Commercial (SA)</a><a href="send-us-your-plans.html">Send us your plans</a></nav><p style="font-size:12px;color:#666">Header and footer are the live site's. Only the footer Applications links (Commercial, Sports &amp; Recreation, Industrial) point to these mockup pages.</p>
-    <h2>Sports &amp; Recreation page, NSW campaign</h2>
-    <p>Live URL: <code>/sports-recreation-sector/</code>. Campaign: NSW | Sector | Sports &amp; Recreation. Also used by the national Sectors campaign (Sports &amp; Recreation / Gyms ad group).</p>
+    <nav><b>Mockup pages:</b><br><a href="education.html">Education</a><a href="commercial.html">Commercial</a><a href="send-us-your-plans.html">Send us your plans</a></nav><p style="font-size:12px;color:#666">Header and footer are the live site's. The footer Education and Commercial links and the header Free Quote button point to these mockup pages. Industrial and Sports &amp; Recreation link to the live site.</p>
+    <h2>Commercial page</h2>
+    <p>Live URL: <code>/commercial-sector/</code>. Campaigns: commercial across all states (new direction from DuraCube). Keywords below come from the SA | Sector | Commercial campaign and the national Sectors campaign (Commercial Bathroom ad group).</p>
     <h3>Suggested title and meta</h3>
-    <p><b>Title (58):</b> Gym &amp; Change Room Lockers for Sports Facilities | DuraCube<br><b>Meta (150):</b> Waterproof gym and change room lockers, shower partitions and bench seating for gyms, sports clubs and aquatic centres. 15-year warranty. Get a price.</p>
+    <p><b>Title (51):</b> Commercial Bathroom Partitions &amp; Lockers | DuraCube<br><b>Meta (153):</b> Commercial toilet and shower partitions, workplace and end-of-trip lockers, benches and vanities. Made in Australia, 15-year warranty. Get a price today.</p>
     <h3>Target keywords (Google Ads, 1 Sep to 12 Nov 2026)</h3>
     <table><tr><th>Keyword</th><th>Impr.</th><th>Clicks</th><th>Landing exp.</th></tr>
-      <tr><td>change room lockers</td><td>128</td><td>10</td><td>n/a</td></tr>
-      <tr><td>gym lockers</td><td>94</td><td>11</td><td class="low">Below average</td></tr>
-      <tr><td>sports lockers</td><td>52</td><td>6</td><td class="low">Below average</td></tr>
-      <tr><td>team lockers</td><td>12</td><td>3</td><td>n/a</td></tr>
-      <tr><td>wet area lockers</td><td>12</td><td>3</td><td>n/a</td></tr>
-      <tr><td>gym shower partitions</td><td>11</td><td>4</td><td>n/a</td></tr>
-      <tr><td>swimming pool change rooms</td><td>6</td><td>1</td><td>n/a</td></tr>
-      <tr><td>gym toilet partitions, sports club washrooms, aquatic centre change rooms, sporting facility lockers, sports facility joinery</td><td>0</td><td>0</td><td>n/a</td></tr>
+      <tr><td>commercial bathroom partitions</td><td>194</td><td>17</td><td>n/a</td></tr>
+      <tr><td>commercial lockers</td><td>57</td><td>9</td><td class="low">Below average</td></tr>
+      <tr><td>commercial shower partitions</td><td>48</td><td>6</td><td>n/a</td></tr>
+      <tr><td>commercial bench seating</td><td>37</td><td>2</td><td>n/a</td></tr>
+      <tr><td>workplace lockers</td><td>33</td><td>2</td><td class="low">Below average</td></tr>
+      <tr><td>commercial toilet cubicles</td><td>32</td><td>1</td><td>n/a</td></tr>
+      <tr><td>commercial bathroom fitout</td><td>30</td><td>3</td><td>n/a</td></tr>
+      <tr><td>commercial toilet partitions</td><td>11</td><td>3</td><td>n/a</td></tr>
+      <tr><td>end of trip lockers</td><td>7</td><td>1</td><td class="low">Below average</td></tr>
+      <tr><td>waterproof lockers, office lockers</td><td>8</td><td>2</td><td>n/a</td></tr>
     </table>
     <h3>From the keyword list (SEO)</h3>
     <table><tr><th>Keyword</th><th>MSV</th><th>Rank</th></tr>
-      <tr><td>change room</td><td>200</td><td>No data</td></tr>
-      <tr><td>sports locker</td><td>100</td><td>No data</td></tr>
-      <tr><td>change room design</td><td>0</td><td>No data</td></tr>
+      <tr><td>commercial toilets</td><td>150</td><td>Not ranked</td></tr>
+      <tr><td>commercial toilet partitions</td><td>80</td><td>11</td></tr>
+      <tr><td>commercial lockers</td><td>80</td><td>Not ranked</td></tr>
+      <tr><td>commercial bathroom partitions</td><td>40</td><td>Not ranked</td></tr>
     </table>
     <h3>Search terms worth answering on the page</h3>
-    <p>gym lockers, changeroom lockers, waterproof lockers, sport locker, gym shower stall, lockers staff.</p>
+    <p>toilet partitions adelaide, toilet cubicle door width and toilet cubicle door size (6 conversions between them), bathroom partition wall, laminex lockers, z lockers. A short FAQ on cubicle and door dimensions would cover the door searches. Get the dimensions from DuraCube first.</p>
     <h3>Changes</h3>
-    <ol><li>Gym and change room lockers section near the top (LBSM-P, LPM, lock options, Zoo Fitness).</li><li>Short form on the page, plans optional.</li><li>Two hero paths.</li><li>Emu Plains office and Rozelle Parklands first.</li><li>Tap-to-call and a sticky call/quote bar on mobile. Header and footer unchanged.</li><li>Static stats instead of counters that show 0.</li></ol>
+    <ol><li>Short form on the page, plans optional.</li><li>Two hero paths.</li><li>Local teams for all four states, with 95 Grenfell Street as the featured project.</li><li>Commercial and workplace lockers block (fix for the below-average landing experience).</li><li>Tap-to-call and a sticky call/quote bar on mobile. Header and footer unchanged apart from the Applications links.</li></ol>
     <h3>Dev notes</h3>
-    <ul><li>Modbury is in SA. Keep it lower on the NSW version.</li><li>Hero image is Weston Bears Park (NSW). Swap to a locker shot if one is available.</li></ul>
+    <ul><li>Keep this page indexed if the changes go onto the existing <code>/commercial-sector/</code> URL. Only use noindex for a separate ad-only copy.</li><li>The ad copy promises "3-4 week lead times". Confirm with DuraCube before adding lead times to the page.</li><li>The live hero slideshow has a Her Majesty's Theatre (Adelaide) image. If there's a case study, it would be a second SA project for this block.</li></ul>
   </template>
 </div>
 
@@ -4869,25 +4895,25 @@ body{overflow-x:clip}
 				<div class="elementor-widget-container">
 							<ul class="elementor-icon-list-items">
 							<li class="elementor-icon-list-item">
-											<a href="commercial-sa.html">
+											<a href="commercial.html">
 
 											<span class="elementor-icon-list-text">Commercial </span>
 											</a>
 									</li>
 								<li class="elementor-icon-list-item">
-											<a href="sports-nsw.html">
+											<a href="https://duracube.com.au/sports-recreation-sector/">
 
 											<span class="elementor-icon-list-text">Sports &amp; Recreation</span>
 											</a>
 									</li>
 								<li class="elementor-icon-list-item">
-											<a href="https://duracube.com.au/education-sector/%20">
+											<a href="education.html">
 
 											<span class="elementor-icon-list-text">Education </span>
 											</a>
 									</li>
 								<li class="elementor-icon-list-item">
-											<a href="industrial-qld.html">
+											<a href="https://duracube.com.au/industrial-sector">
 
 											<span class="elementor-icon-list-text">Industrial </span>
 											</a>
@@ -4927,7 +4953,7 @@ body{overflow-x:clip}
 						<input type="email" value="" name="etdl_email_address" placeholder="Email Address" required="" data-sharkid="__0" data-sharklabel="email">
 						<input type="submit" value="SUBMIT" class="button">
 						<div class="g-recaptcha" data-sitekey="6LfHOrYhAAAAAFYssEORydGkLwG5zPKC54wtzxe4" data-callback="correctCaptcha"><div style="width: 304px; height: 78px;"><div><iframe title="reCAPTCHA" width="304" height="78" role="presentation" name="a-38sr03jn45nv" frameborder="0" scrolling="no" sandbox="allow-forms allow-popups allow-same-origin allow-scripts allow-top-navigation allow-modals allow-popups-to-escape-sandbox allow-storage-access-by-user-activation" src="site/anchor.html"></iframe></div><textarea id="g-recaptcha-response" name="g-recaptcha-response" class="g-recaptcha-response" style="width: 250px; height: 40px; border: 1px solid rgb(193, 193, 193); margin: 10px 25px; padding: 0px; resize: none; display: none;"></textarea></div><iframe style="display: none;" src="site/saved_resource(1).html"></iframe></div>
-					<input type="hidden" id="apbct_visible_fields_0" name="apbct_visible_fields" value="eyIwIjp7InZpc2libGVfZmllbGRzIjoiZXRkbF9lbWFpbF9hZGRyZXNzIiwidmlzaWJsZV9maWVsZHNfY291bnQiOjEsImludmlzaWJsZV9maWVsZHMiOiJnLXJlY2FwdGNoYS1yZXNwb25zZSBjdF9ub19jb29raWVfaGlkZGVuX2ZpZWxkIiwiaW52aXNpYmxlX2ZpZWxkc19jb3VudCI6Mn19"><input type="hidden" id="ct_bot_detector_event_token_6170" name="ct_bot_detector_event_token" value="fc81be7e38a6ab375a869b4317f59583ca37a1b521a0d2ca85b7bf28ee99116d"><input name="ct_no_cookie_hidden_field" value="_ct_no_cookie_data_eyJjdF9ib3RfZGV0ZWN0b3JfZXZlbnRfdG9rZW4iOiJmYzgxYmU3ZTM4YTZhYjM3NWE4NjliNDMxN2Y1OTU4M2NhMzdhMWI1MjFhMGQyY2E4NWI3YmYyOGVlOTkxMTZkIiwiY3Rfc2NyZWVuX2luZm8iOiIiLCJjdF9jaGVja2pzIjoxMDkwNDAwMTY1LCJjdF90aW1lem9uZSI6OCwiYXBiY3RfdmlzaWJsZV9maWVsZHMiOiIwIiwiY3RfcHNfdGltZXN0YW1wIjoxNzk0NTM4NDI0LCJjdF9jaGVja2VkX2VtYWlsc19leGlzdCI6IjAiLCJjdF9wb2ludGVyX2RhdGEiOiIwIiwiYXBiY3RfZXhpc3RpbmdfdmlzaXRvciI6MSwiY3RfYm90X2RldGVjdG9yX2Zyb250ZW5kX2RhdGFfbG9nIjpbWyJzdWNjZXNzIiwidGltZXN0YW1wX29uX3NlbmQiLCJ0aW1lc3RhbXBfb25fcmVjZWl2ZWQiLCJldmVudF90b2tlbiIsImpzX2V2ZW50IiwiaG9zdF9uYW1lIiwibmV3X2V2ZW50X3Rva2VuIiwiZXJyb3IiXSxbdHJ1ZSwxNzk0NTM4NDI0LDE3OTQ1Mzg0MjYsImZjODFiZTdlMzhhNmFiMzc1YTg2OWI0MzE3ZjU5NTgzY2EzN2ExYjUyMWEwZDJjYTg1YjdiZjI4ZWU5OTExNmQiLCJET01Db250ZW50TG9hZGVkIiwiZmQtYXBpLmNsZWFudGFsay5vcmciLCJmYzgxYmU3ZTM4YTZhYjM3NWE4NjliNDMxN2Y1OTU4M2NhMzdhMWI1MjFhMGQyY2E4NWI3YmYyOGVlOTkxMTZkIiwiIl1dLCJhcGJjdF9oZWFkbGVzcyI6ZmFsc2UsImN0X2ZrcF90aW1lc3RhbXAiOiIwIiwiY3RfY2hlY2tlZF9lbWFpbHMiOiIwIiwidHlwbyI6W10sImNvbGxlY3RpbmdfdXNlcl9hY3Rpdml0eV9kYXRhIjpbXSwiYXBiY3RfYnJvd3Nlcl9zdGF0ZSI6IntcImJvdGRfbG9naWNfbG9hZGVkXCI6MSxcImJvdGRfd3JhcHBlcl9sb2FkZWRcIjoxLFwiZnJvbnRlbmRfZGF0YV9sb2dcIjpbW1wic3VjY2Vzc1wiLFwidGltZXN0YW1wX29uX3NlbmRcIixcInRpbWVzdGFtcF9vbl9yZWNlaXZlZFwiLFwiZXZlbnRfdG9rZW5cIixcImpzX2V2ZW50XCIsXCJob3N0X25hbWVcIixcIm5ld19ldmVudF90b2tlblwiLFwiZXJyb3JcIl0sW3RydWUsMTc5NDUzODQyNCwxNzk0NTM4NDI2LFwiZmM4MWJlN2UzOGE2YWIzNzVhODY5YjQzMTdmNTk1ODNjYTM3YTFiNTIxYTBkMmNhODViN2JmMjhlZTk5MTE2ZFwiLFwiRE9NQ29udGVudExvYWRlZFwiLFwiZmQtYXBpLmNsZWFudGFsay5vcmdcIixcImZjODFiZTdlMzhhNmFiMzc1YTg2OWI0MzE3ZjU5NTgzY2EzN2ExYjUyMWEwZDJjYTg1YjdiZjI4ZWU5OTExNmRcIixcIlwiXV0sXCJ0cmFuc3BvcnRfZW5hYmxlZFwiOjF9In0=" type="hidden" class="apbct_special_field ct_no_cookie_hidden_field"><shark-icon-container data-sharkidcontainer="__0" style="position: absolute;"><template shadowrootmode="open"><surfhark-icon data-sharkidicon="__0" style="background-image: url(&quot;chrome-extension://ailoabdmgclmfmhdagmlohpjlbpffblp/autofill-action-light.svg&quot;); background-repeat: no-repeat; background-position: left center; background-size: cover; position: absolute; right: 0px; visibility: visible; display: block; z-index: 1; border-width: medium; border-style: none; border-color: currentcolor; border-image: none; cursor: pointer; padding: 0px; transition: none; pointer-events: all; opacity: 1; left: 132.75px; top: -109.75px; width: 18px; height: 18px; min-width: 18px; min-height: 18px;"></surfhark-icon></template></shark-icon-container></form>
+					<input type="hidden" id="apbct_visible_fields_0" name="apbct_visible_fields" value="eyIwIjp7InZpc2libGVfZmllbGRzIjoiZXRkbF9lbWFpbF9hZGRyZXNzIiwidmlzaWJsZV9maWVsZHNfY291bnQiOjEsImludmlzaWJsZV9maWVsZHMiOiJnLXJlY2FwdGNoYS1yZXNwb25zZSBjdF9ub19jb29raWVfaGlkZGVuX2ZpZWxkIiwiaW52aXNpYmxlX2ZpZWxkc19jb3VudCI6Mn19"><input type="hidden" id="ct_bot_detector_event_token_6170" name="ct_bot_detector_event_token" value="fc81be7e38a6ab375a869b4317f59583ca37a1b521a0d2ca85b7bf28ee99116d"><input name="ct_no_cookie_hidden_field" value="_ct_no_cookie_data_eyJjdF9ib3RfZGV0ZWN0b3JfZXZlbnRfdG9rZW4iOiJmYzgxYmU3ZTM4YTZhYjM3NWE4NjliNDMxN2Y1OTU4M2NhMzdhMWI1MjFhMGQyY2E4NWI3YmYyOGVlOTkxMTZkIiwiY3Rfc2NyZWVuX2luZm8iOiIiLCJjdF9jaGVja2pzIjoxMDkwNDAwMTY1LCJjdF90aW1lem9uZSI6OCwiYXBiY3RfdmlzaWJsZV9maWVsZHMiOiIwIiwiY3RfcHNfdGltZXN0YW1wIjoxNzk0NTM4NDI0LCJjdF9jaGVja2VkX2VtYWlsc19leGlzdCI6IjAiLCJjdF9wb2ludGVyX2RhdGEiOiIwIiwiYXBiY3RfZXhpc3RpbmdfdmlzaXRvciI6MSwiY3RfYm90X2RldGVjdG9yX2Zyb250ZW5kX2RhdGFfbG9nIjpbWyJzdWNjZXNzIiwidGltZXN0YW1wX29uX3NlbmQiLCJ0aW1lc3RhbXBfb25fcmVjZWl2ZWQiLCJldmVudF90b2tlbiIsImpzX2V2ZW50IiwiaG9zdF9uYW1lIiwibmV3X2V2ZW50X3Rva2VuIiwiZXJyb3IiXSxbdHJ1ZSwxNzk0NTM4NDI0LDE3OTQ1Mzg0MjYsImZjODFiZTdlMzhhNmFiMzc1YTg2OWI0MzE3ZjU5NTgzY2EzN2ExYjUyMWEwZDJjYTg1YjdiZjI4ZWU5OTExNmQiLCJET01Db250ZW50TG9hZGVkIiwiZmQtYXBpLmNsZWFudGFsay5vcmciLCJmYzgxYmU3ZTM4YTZhYjM3NWE4NjliNDMxN2Y1OTU4M2NhMzdhMWI1MjFhMGQyY2E4NWI3YmYyOGVlOTkxMTZkIiwiIl1dLCJhcGJjdF9oZWFkbGVzcyI6ZmFsc2UsImN0X2ZrcF90aW1lc3RhbXAiOiIwIiwiY3RfY2hlY2tlZF9lbWFpbHMiOiIwIiwidHlwbyI6W10sImNvbGxlY3RpbmdfdXNlcl9hY3Rpdml0eV9kYXRhIjpbXSwiYXBiY3RfYnJvd3Nlcl9zdGF0ZSI6IntcImJvdGRfbG9naWNfbG9hZGVkXCI6MSxcImJvdGRfd3JhcHBlcl9sb2FkZWRcIjoxLFwiZnJvbnRlbmRfZGF0YV9sb2dcIjpbW1wic3VjY2Vzc1wiLFwidGltZXN0YW1wX29uX3NlbmRcIixcInRpbWVzdGFtcF9vbl9yZWNlaXZlZFwiLFwiZXZlbnRfdG9rZW5cIixcImpzX2V2ZW50XCIsXCJob3N0X25hbWVcIixcIm5ld19ldmVudF90b2tlblwiLFwiZXJyb3JcIl0sW3RydWUsMTc5NDUzODQyNCwxNzk0NTM4NDI2LFwiZmM4MWJlN2UzOGE2YWIzNzVhODY5YjQzMTdmNTk1ODNjYTM3YTFiNTIxYTBkMmNhODViN2JmMjhlZTk5MTE2ZFwiLFwiRE9NQ29udGVudExvYWRlZFwiLFwiZmQtYXBpLmNsZWFudGFsay5vcmdcIixcImZjODFiZTdlMzhhNmFiMzc1YTg2OWI0MzE3ZjU5NTgzY2EzN2ExYjUyMWEwZDJjYTg1YjdiZjI4ZWU5OTExNmRcIixcIlwiXV0sXCJ0cmFuc3BvcnRfZW5hYmxlZFwiOjF9In0=" type="hidden" class="apbct_special_field ct_no_cookie_hidden_field"></form>
 				</div>
 				<div id="email-to-download-bg"></div>
 				<script type="text/javascript">
